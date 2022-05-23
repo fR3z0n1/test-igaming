@@ -1,0 +1,80 @@
+version: '3'
+
+services:
+  nginx:
+    image: nginx
+    container_name: nginx
+    depends_on:
+      - php
+      - db
+    environment:
+      DB_HOST: db
+    ports:
+      - "83:80"
+    volumes:
+      - ./nginx/hosts:/etc/nginx/conf.d
+      - ./nginx/logs:/var/log/nginx
+      - ${APP_PATH_LOCAL}:${APP_PATH_CONTAINER}
+    working_dir: ${APP_PATH_CONTAINER}
+    networks:
+      - app-network
+
+  php:
+    working_dir: ${APP_PATH_CONTAINER}
+    container_name: php
+    build: ./php
+    links:
+      - composer
+      - db
+    volumes:
+      - ${APP_PATH_LOCAL}:${APP_PATH_CONTAINER}
+    command: bash -c "chown -R www-data:www-data /var/www/html/storage &&
+      chmod -R 775 /var/www/html/storage && php-fpm"
+    networks:
+      - app-network
+
+  db:
+    image: mariadb
+    container_name: db
+    restart: unless-stopped
+    ports:
+      - "3306:3306"
+    environment:
+      MYSQL_ROOT_PASSWORD: 123456
+      MYSQL_DATABASE: igaming
+      MYSQL_USER: test
+      MYSQL_PASSWORD: test123
+    volumes:
+        - ${DB_PATH_HOST_MYSQL}:/var/lib/mysql
+    networks:
+      - app-network
+
+  phpmyadmin:
+    image: phpmyadmin
+    restart: always
+    ports:
+      - 8080:80
+    environment:
+      - PMA_ARBITRARY=1
+    networks:
+      - app-network
+
+  composer:
+    image: composer:2.0
+    container_name: composer
+    volumes:
+      - ${APP_PATH_LOCAL}:${APP_PATH_CONTAINER}
+    working_dir: ${APP_PATH_CONTAINER}
+    command: composer install
+
+  redis:
+    build: ./databases/redis
+    container_name: redis
+    ports:
+      - "6379:6379"
+    networks:
+      - app-network
+
+networks:
+  app-network:
+    driver: bridge

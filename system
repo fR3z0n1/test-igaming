@@ -1,0 +1,1377 @@
+-- Logs begin at Sun 2022-03-20 21:49:50 +07, end at Wed 2022-05-18 03:04:53 +07. --
+мая 18 02:52:11 eduard-HKD-WXX charon[79348]: 12[ENC] parsed ID_PROT request 0 [ KE No NAT-D NAT-D ]
+мая 18 02:52:11 eduard-HKD-WXX charon[79348]: 12[IKE] local host is behind NAT, sending keep alives
+мая 18 02:52:11 eduard-HKD-WXX charon[79348]: 12[ENC] generating ID_PROT response 0 [ KE No NAT-D NAT-D ]
+мая 18 02:52:11 eduard-HKD-WXX charon[79348]: 12[NET] sending packet: from 192.168.0.67[4500] to 98.103.101.206[4500] (268 bytes)
+мая 18 02:52:11 eduard-HKD-WXX charon[79348]: 15[NET] received packet: from 98.103.101.206[4500] to 192.168.0.67[4500] (108 bytes)
+мая 18 02:52:11 eduard-HKD-WXX charon[79348]: 15[ENC] parsed ID_PROT request 0 [ ID HASH ]
+мая 18 02:52:11 eduard-HKD-WXX charon[79348]: 15[CFG] looking for pre-shared key peer configs matching 192.168.0.67...98.103.101.206[98.103.101.206]
+мая 18 02:52:11 eduard-HKD-WXX charon[79348]: 15[CFG] selected peer config "9a3d11de-76df-4560-a430-1ddf23d0ad3b"
+мая 18 02:52:11 eduard-HKD-WXX charon[79348]: 15[IKE] detected reauth of existing IKE_SA, adopting 2 children and 0 virtual IPs
+мая 18 02:52:11 eduard-HKD-WXX charon[79348]: 15[IKE] schedule delete of duplicate IKE_SA for peer '98.103.101.206' due to uniqueness policy and suspected reauthentication
+мая 18 02:52:11 eduard-HKD-WXX charon[79348]: 15[IKE] IKE_SA 9a3d11de-76df-4560-a430-1ddf23d0ad3b[8] established between 192.168.0.67[192.168.0.67]...98.103.101.206[98.103.101.206]
+мая 18 02:52:11 eduard-HKD-WXX charon[79348]: 15[IKE] IKE_SA 9a3d11de-76df-4560-a430-1ddf23d0ad3b[8] established between 192.168.0.67[192.168.0.67]...98.103.101.206[98.103.101.206]
+мая 18 02:52:11 eduard-HKD-WXX charon[79348]: 15[IKE] scheduling reauthentication in 9876s
+мая 18 02:52:11 eduard-HKD-WXX charon[79348]: 15[IKE] maximum IKE_SA lifetime 10416s
+мая 18 02:52:11 eduard-HKD-WXX charon[79348]: 15[ENC] generating ID_PROT response 0 [ ID HASH ]
+мая 18 02:52:11 eduard-HKD-WXX charon[79348]: 15[NET] sending packet: from 192.168.0.67[4500] to 98.103.101.206[4500] (108 bytes)
+мая 18 02:52:21 eduard-HKD-WXX audit[152433]: [0;34m[0;34mSECCOMP auid=1000 uid=1000 gid=1000 ses=3 subj=snap.chromium.chromium pid=152433 comm="chrome" exe="/snap/chromium/1993/usr/lib/chromium-browser/chrome" sig=0 arch=c000003e syscall=330 compat=0 ip=0x7fa0fa16103b code=0x50000[0m
+мая 18 02:52:21 eduard-HKD-WXX kernel: [0;1;39m[0;1;31m[0;1;39maudit: type=1326 audit(1652817141.622:1579): auid=1000 uid=1000 gid=1000 ses=3 subj=snap.chromium.chromium pid=152433 comm="chrome" exe="/snap/chromium/1993/usr/lib/chromium-browser/chrome" sig=0 arch=c000003e syscall=330 compat=0 ip=0x7fa0fa16103b code=0x50000[0m
+мая 18 02:52:21 eduard-HKD-WXX charon[79348]: 16[IKE] deleting IKE_SA 9a3d11de-76df-4560-a430-1ddf23d0ad3b[7] between 192.168.0.67[192.168.0.67]...98.103.101.206[98.103.101.206]
+мая 18 02:52:21 eduard-HKD-WXX charon[79348]: 16[IKE] deleting IKE_SA 9a3d11de-76df-4560-a430-1ddf23d0ad3b[7] between 192.168.0.67[192.168.0.67]...98.103.101.206[98.103.101.206]
+мая 18 02:52:21 eduard-HKD-WXX charon[79348]: 16[IKE] sending DELETE for IKE_SA 9a3d11de-76df-4560-a430-1ddf23d0ad3b[7]
+мая 18 02:52:21 eduard-HKD-WXX charon[79348]: 16[ENC] generating INFORMATIONAL_V1 request 468730123 [ HASH D ]
+мая 18 02:52:21 eduard-HKD-WXX charon[79348]: 16[NET] sending packet: from 192.168.0.67[4500] to 98.103.101.206[4500] (124 bytes)
+мая 18 02:52:31 eduard-HKD-WXX NetworkManager[897]: <info>  [1652817151.9214] dhcp6 (wlp0s20f3): option dhcp6_domain_search  => 'Dlink'
+мая 18 02:52:31 eduard-HKD-WXX NetworkManager[897]: <info>  [1652817151.9215] dhcp6 (wlp0s20f3): option dhcp6_name_servers   => 'fe80::2ad:24ff:fee6:4f40'
+мая 18 02:52:31 eduard-HKD-WXX NetworkManager[897]: <info>  [1652817151.9215] dhcp6 (wlp0s20f3): option ip6_address          => 'fd01::4023:e039:1dfa:ff2b'
+мая 18 02:52:31 eduard-HKD-WXX NetworkManager[897]: <info>  [1652817151.9215] dhcp6 (wlp0s20f3): state changed bound -> bound
+мая 18 02:52:31 eduard-HKD-WXX dbus-daemon[895]: [system] Activating via systemd: service name='org.freedesktop.nm_dispatcher' unit='dbus-org.freedesktop.nm-dispatcher.service' requested by ':1.13' (uid=0 pid=897 comm="/usr/sbin/NetworkManager --no-daemon " label="unconfined")
+мая 18 02:52:31 eduard-HKD-WXX systemd[1]: Starting Network Manager Script Dispatcher Service...
+-- Subject: Начинается запуск юнита NetworkManager-dispatcher.service
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- Начат процесс запуска юнита NetworkManager-dispatcher.service.
+мая 18 02:52:31 eduard-HKD-WXX dbus-daemon[895]: [system] Successfully activated service 'org.freedesktop.nm_dispatcher'
+мая 18 02:52:31 eduard-HKD-WXX systemd[1]: Started Network Manager Script Dispatcher Service.
+-- Subject: Запуск юнита NetworkManager-dispatcher.service завершен
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- Процесс запуска юнита NetworkManager-dispatcher.service был завершен.
+-- 
+-- Результат: done.
+мая 18 02:52:41 eduard-HKD-WXX systemd[1]: NetworkManager-dispatcher.service: Succeeded.
+-- Subject: Unit succeeded
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- The unit NetworkManager-dispatcher.service has successfully entered the 'dead' state.
+мая 18 02:52:43 eduard-HKD-WXX charon[79348]: 14[IKE] sending keep alive to 98.103.101.206[4500]
+мая 18 02:53:01 eduard-HKD-WXX charon[79348]: 06[KNL] interface veth4d44f7c activated
+мая 18 02:53:01 eduard-HKD-WXX NetworkManager[897]: <info>  [1652817181.4027] manager: (veth085e5e1): new Veth device (/org/freedesktop/NetworkManager/Devices/1975)
+мая 18 02:53:01 eduard-HKD-WXX kernel: br-5b085080a970: port 2(veth4d44f7c) entered blocking state
+мая 18 02:53:01 eduard-HKD-WXX kernel: br-5b085080a970: port 2(veth4d44f7c) entered disabled state
+мая 18 02:53:01 eduard-HKD-WXX kernel: device veth4d44f7c entered promiscuous mode
+мая 18 02:53:01 eduard-HKD-WXX kernel: br-5b085080a970: port 2(veth4d44f7c) entered blocking state
+мая 18 02:53:01 eduard-HKD-WXX kernel: br-5b085080a970: port 2(veth4d44f7c) entered forwarding state
+мая 18 02:53:01 eduard-HKD-WXX kernel: br-5b085080a970: port 2(veth4d44f7c) entered disabled state
+мая 18 02:53:01 eduard-HKD-WXX NetworkManager[897]: <info>  [1652817181.4049] manager: (veth4d44f7c): new Veth device (/org/freedesktop/NetworkManager/Devices/1976)
+мая 18 02:53:01 eduard-HKD-WXX systemd-udevd[152478]: ethtool: autonegotiation is unset or enabled, the speed and duplex are not writable.
+мая 18 02:53:01 eduard-HKD-WXX systemd-udevd[152480]: ethtool: autonegotiation is unset or enabled, the speed and duplex are not writable.
+мая 18 02:53:01 eduard-HKD-WXX systemd-udevd[152478]: Using default interface naming scheme 'v245'.
+мая 18 02:53:01 eduard-HKD-WXX systemd-udevd[152478]: [0;1;38;5;185m[0;1;39m[0;1;38;5;185mveth085e5e1: Could not generate persistent MAC: No data available[0m
+мая 18 02:53:01 eduard-HKD-WXX systemd-udevd[152480]: Using default interface naming scheme 'v245'.
+мая 18 02:53:01 eduard-HKD-WXX systemd-udevd[152480]: [0;1;38;5;185m[0;1;39m[0;1;38;5;185mveth4d44f7c: Could not generate persistent MAC: No data available[0m
+мая 18 02:53:01 eduard-HKD-WXX docker.dockerd[2481]: time="2022-05-18T02:53:01.435730479+07:00" level=info msg="starting signal loop" namespace=moby path=/run/snap.docker/containerd/daemon/io.containerd.runtime.v2.task/moby/eeb5b75607f7fafcff8cf8fbdbd2b7014983ab6eba91cfa53e6b0361859e731b pid=152514
+мая 18 02:53:01 eduard-HKD-WXX charon[79348]: 15[KNL] interface veth085e5e1 deleted
+мая 18 02:53:01 eduard-HKD-WXX kernel: eth0: renamed from veth085e5e1
+мая 18 02:53:01 eduard-HKD-WXX NetworkManager[897]: <info>  [1652817181.8986] device (veth4d44f7c): carrier: link connected
+мая 18 02:53:01 eduard-HKD-WXX kernel: IPv6: ADDRCONF(NETDEV_CHANGE): veth4d44f7c: link becomes ready
+мая 18 02:53:01 eduard-HKD-WXX kernel: br-5b085080a970: port 2(veth4d44f7c) entered blocking state
+мая 18 02:53:01 eduard-HKD-WXX kernel: br-5b085080a970: port 2(veth4d44f7c) entered forwarding state
+мая 18 02:53:01 eduard-HKD-WXX gnome-shell[2641]: [0;1;39m[0;1;31m[0;1;39mRemoving a network device that was not added[0m
+мая 18 02:53:02 eduard-HKD-WXX kernel: br-5b085080a970: port 2(veth4d44f7c) entered disabled state
+мая 18 02:53:02 eduard-HKD-WXX kernel: veth085e5e1: renamed from eth0
+мая 18 02:53:02 eduard-HKD-WXX systemd-udevd[152478]: ethtool: autonegotiation is unset or enabled, the speed and duplex are not writable.
+мая 18 02:53:02 eduard-HKD-WXX charon[79348]: 14[KNL] interface veth4d44f7c deactivated
+мая 18 02:53:02 eduard-HKD-WXX NetworkManager[897]: <info>  [1652817182.0861] manager: (veth085e5e1): new Veth device (/org/freedesktop/NetworkManager/Devices/1977)
+мая 18 02:53:02 eduard-HKD-WXX kernel: br-5b085080a970: port 2(veth4d44f7c) entered disabled state
+мая 18 02:53:02 eduard-HKD-WXX charon[79348]: 06[KNL] interface veth085e5e1 deleted
+мая 18 02:53:02 eduard-HKD-WXX charon[79348]: 07[KNL] interface veth4d44f7c deleted
+мая 18 02:53:02 eduard-HKD-WXX kernel: device veth4d44f7c left promiscuous mode
+мая 18 02:53:02 eduard-HKD-WXX kernel: br-5b085080a970: port 2(veth4d44f7c) entered disabled state
+мая 18 02:53:02 eduard-HKD-WXX systemd-udevd[152478]: [0;1;31m[0;1;39m[0;1;31mveth085e5e1: Failed to get link config: No such device[0m
+мая 18 02:53:02 eduard-HKD-WXX NetworkManager[897]: <info>  [1652817182.1089] device (veth4d44f7c): released from master device br-5b085080a970
+мая 18 02:53:02 eduard-HKD-WXX gnome-shell[2641]: [0;1;39m[0;1;31m[0;1;39mRemoving a network device that was not added[0m
+мая 18 02:53:02 eduard-HKD-WXX gnome-shell[2641]: [0;1;39m[0;1;31m[0;1;39mRemoving a network device that was not added[0m
+мая 18 02:53:09 eduard-HKD-WXX audit[152644]: [0;34m[0;34mSECCOMP auid=1000 uid=1000 gid=1000 ses=3 subj=snap.chromium.chromium pid=152644 comm="chrome" exe="/snap/chromium/1993/usr/lib/chromium-browser/chrome" sig=0 arch=c000003e syscall=330 compat=0 ip=0x7fa0fa16103b code=0x50000[0m
+мая 18 02:53:09 eduard-HKD-WXX kernel: [0;1;39m[0;1;31m[0;1;39maudit: type=1326 audit(1652817189.990:1580): auid=1000 uid=1000 gid=1000 ses=3 subj=snap.chromium.chromium pid=152644 comm="chrome" exe="/snap/chromium/1993/usr/lib/chromium-browser/chrome" sig=0 arch=c000003e syscall=330 compat=0 ip=0x7fa0fa16103b code=0x50000[0m
+мая 18 02:53:12 eduard-HKD-WXX gnome-shell[2641]: Window manager warning: last_user_time (39048699) is greater than comparison timestamp (39048698).  This most likely represents a buggy client sending inaccurate timestamps in messages such as _NET_ACTIVE_WINDOW.  Trying to work around...
+мая 18 02:53:12 eduard-HKD-WXX gnome-shell[2641]: Window manager warning: 0x1600003 appears to be one of the offending windows with a timestamp of 39048699.  Working around...
+мая 18 02:53:22 eduard-HKD-WXX charon[79348]: 11[IKE] sending keep alive to 98.103.101.206[4500]
+мая 18 02:53:43 eduard-HKD-WXX charon[79348]: 16[IKE] sending keep alive to 98.103.101.206[4500]
+мая 18 02:54:02 eduard-HKD-WXX charon[79348]: 14[KNL] interface veth30267c1 activated
+мая 18 02:54:02 eduard-HKD-WXX NetworkManager[897]: <info>  [1652817242.0127] manager: (veth2fad5b1): new Veth device (/org/freedesktop/NetworkManager/Devices/1978)
+мая 18 02:54:02 eduard-HKD-WXX kernel: br-5b085080a970: port 2(veth30267c1) entered blocking state
+мая 18 02:54:02 eduard-HKD-WXX kernel: br-5b085080a970: port 2(veth30267c1) entered disabled state
+мая 18 02:54:02 eduard-HKD-WXX kernel: device veth30267c1 entered promiscuous mode
+мая 18 02:54:02 eduard-HKD-WXX kernel: br-5b085080a970: port 2(veth30267c1) entered blocking state
+мая 18 02:54:02 eduard-HKD-WXX kernel: br-5b085080a970: port 2(veth30267c1) entered forwarding state
+мая 18 02:54:02 eduard-HKD-WXX kernel: br-5b085080a970: port 2(veth30267c1) entered disabled state
+мая 18 02:54:02 eduard-HKD-WXX NetworkManager[897]: <info>  [1652817242.0146] manager: (veth30267c1): new Veth device (/org/freedesktop/NetworkManager/Devices/1979)
+мая 18 02:54:02 eduard-HKD-WXX systemd-udevd[152716]: ethtool: autonegotiation is unset or enabled, the speed and duplex are not writable.
+мая 18 02:54:02 eduard-HKD-WXX systemd-udevd[152718]: ethtool: autonegotiation is unset or enabled, the speed and duplex are not writable.
+мая 18 02:54:02 eduard-HKD-WXX systemd-udevd[152716]: Using default interface naming scheme 'v245'.
+мая 18 02:54:02 eduard-HKD-WXX systemd-udevd[152716]: [0;1;38;5;185m[0;1;39m[0;1;38;5;185mveth2fad5b1: Could not generate persistent MAC: No data available[0m
+мая 18 02:54:02 eduard-HKD-WXX systemd-udevd[152718]: Using default interface naming scheme 'v245'.
+мая 18 02:54:02 eduard-HKD-WXX systemd-udevd[152718]: [0;1;38;5;185m[0;1;39m[0;1;38;5;185mveth30267c1: Could not generate persistent MAC: No data available[0m
+мая 18 02:54:02 eduard-HKD-WXX docker.dockerd[2481]: time="2022-05-18T02:54:02.075507307+07:00" level=info msg="starting signal loop" namespace=moby path=/run/snap.docker/containerd/daemon/io.containerd.runtime.v2.task/moby/eeb5b75607f7fafcff8cf8fbdbd2b7014983ab6eba91cfa53e6b0361859e731b pid=152753
+мая 18 02:54:02 eduard-HKD-WXX charon[79348]: 13[KNL] interface veth2fad5b1 deleted
+мая 18 02:54:02 eduard-HKD-WXX kernel: eth0: renamed from veth2fad5b1
+мая 18 02:54:02 eduard-HKD-WXX NetworkManager[897]: <info>  [1652817242.6580] device (veth30267c1): carrier: link connected
+мая 18 02:54:02 eduard-HKD-WXX kernel: IPv6: ADDRCONF(NETDEV_CHANGE): veth30267c1: link becomes ready
+мая 18 02:54:02 eduard-HKD-WXX kernel: br-5b085080a970: port 2(veth30267c1) entered blocking state
+мая 18 02:54:02 eduard-HKD-WXX kernel: br-5b085080a970: port 2(veth30267c1) entered forwarding state
+мая 18 02:54:02 eduard-HKD-WXX gnome-shell[2641]: [0;1;39m[0;1;31m[0;1;39mRemoving a network device that was not added[0m
+мая 18 02:54:02 eduard-HKD-WXX kernel: br-5b085080a970: port 2(veth30267c1) entered disabled state
+мая 18 02:54:02 eduard-HKD-WXX kernel: veth2fad5b1: renamed from eth0
+мая 18 02:54:02 eduard-HKD-WXX NetworkManager[897]: <info>  [1652817242.9011] manager: (veth2fad5b1): new Veth device (/org/freedesktop/NetworkManager/Devices/1980)
+мая 18 02:54:02 eduard-HKD-WXX systemd-udevd[152727]: ethtool: autonegotiation is unset or enabled, the speed and duplex are not writable.
+мая 18 02:54:02 eduard-HKD-WXX charon[79348]: 07[KNL] interface veth30267c1 deactivated
+мая 18 02:54:02 eduard-HKD-WXX kernel: br-5b085080a970: port 2(veth30267c1) entered disabled state
+мая 18 02:54:02 eduard-HKD-WXX systemd-udevd[152727]: Using default interface naming scheme 'v245'.
+мая 18 02:54:02 eduard-HKD-WXX charon[79348]: 15[KNL] interface veth2fad5b1 deleted
+мая 18 02:54:02 eduard-HKD-WXX charon[79348]: 10[KNL] interface veth30267c1 deleted
+мая 18 02:54:02 eduard-HKD-WXX kernel: device veth30267c1 left promiscuous mode
+мая 18 02:54:02 eduard-HKD-WXX kernel: br-5b085080a970: port 2(veth30267c1) entered disabled state
+мая 18 02:54:02 eduard-HKD-WXX systemd-udevd[152727]: [0;1;31m[0;1;39m[0;1;31mveth2fad5b1: Failed to get link config: No such device[0m
+мая 18 02:54:02 eduard-HKD-WXX NetworkManager[897]: <info>  [1652817242.9351] device (veth30267c1): released from master device br-5b085080a970
+мая 18 02:54:02 eduard-HKD-WXX gnome-shell[2641]: [0;1;39m[0;1;31m[0;1;39mRemoving a network device that was not added[0m
+мая 18 02:54:02 eduard-HKD-WXX gnome-shell[2641]: [0;1;39m[0;1;31m[0;1;39mRemoving a network device that was not added[0m
+мая 18 02:54:22 eduard-HKD-WXX charon[79348]: 07[IKE] sending keep alive to 98.103.101.206[4500]
+мая 18 02:54:43 eduard-HKD-WXX charon[79348]: 14[IKE] sending keep alive to 98.103.101.206[4500]
+мая 18 02:54:44 eduard-HKD-WXX charon[79348]: 15[KNL] creating delete job for CHILD_SA ESP/0xca0c388a/192.168.0.67
+мая 18 02:54:44 eduard-HKD-WXX charon[79348]: 11[KNL] creating delete job for CHILD_SA ESP/0xc1aa352d/98.103.101.206
+мая 18 02:54:44 eduard-HKD-WXX charon[79348]: 15[IKE] closing expired CHILD_SA 9a3d11de-76df-4560-a430-1ddf23d0ad3b{7} with SPIs ca0c388a_i c1aa352d_o and TS 192.168.0.67/32[udp] === 98.103.101.206/32[udp/l2f]
+мая 18 02:54:44 eduard-HKD-WXX charon[79348]: 15[IKE] closing expired CHILD_SA 9a3d11de-76df-4560-a430-1ddf23d0ad3b{7} with SPIs ca0c388a_i c1aa352d_o and TS 192.168.0.67/32[udp] === 98.103.101.206/32[udp/l2f]
+мая 18 02:54:44 eduard-HKD-WXX charon[79348]: 15[IKE] sending DELETE for ESP CHILD_SA with SPI ca0c388a
+мая 18 02:54:44 eduard-HKD-WXX charon[79348]: 15[ENC] generating INFORMATIONAL_V1 request 557728299 [ HASH D ]
+мая 18 02:54:44 eduard-HKD-WXX charon[79348]: 15[NET] sending packet: from 192.168.0.67[4500] to 98.103.101.206[4500] (108 bytes)
+мая 18 02:54:44 eduard-HKD-WXX charon[79348]: 16[JOB] CHILD_SA ESP/0xc1aa352d/98.103.101.206 not found for delete
+мая 18 02:54:44 eduard-HKD-WXX charon[79348]: 06[NET] received packet: from 98.103.101.206[4500] to 192.168.0.67[4500] (108 bytes)
+мая 18 02:54:44 eduard-HKD-WXX charon[79348]: 06[ENC] parsed INFORMATIONAL_V1 request 3979634988 [ HASH D ]
+мая 18 02:54:44 eduard-HKD-WXX charon[79348]: 06[IKE] received DELETE for ESP CHILD_SA with SPI c1aa352d
+мая 18 02:54:44 eduard-HKD-WXX charon[79348]: 06[IKE] CHILD_SA not found, ignored
+мая 18 02:54:49 eduard-HKD-WXX gnome-shell[2641]: Window manager warning: WM_TRANSIENT_FOR window 0x2a17109 for 0x2a17110 window override-redirect is an override-redirect window and this is not correct according to the standard, so we'll fallback to the first non-override-redirect window 0x2a12f9c.
+мая 18 02:54:51 eduard-HKD-WXX gnome-shell[2641]: Window manager warning: WM_TRANSIENT_FOR window 0x2a17109 for 0x2a17117 window override-redirect is an override-redirect window and this is not correct according to the standard, so we'll fallback to the first non-override-redirect window 0x2a12f9c.
+мая 18 02:55:01 eduard-HKD-WXX NetworkManager[897]: <info>  [1652817301.9258] dhcp6 (wlp0s20f3): option dhcp6_domain_search  => 'Dlink'
+мая 18 02:55:01 eduard-HKD-WXX NetworkManager[897]: <info>  [1652817301.9258] dhcp6 (wlp0s20f3): option dhcp6_name_servers   => 'fe80::2ad:24ff:fee6:4f40'
+мая 18 02:55:01 eduard-HKD-WXX dbus-daemon[895]: [system] Activating via systemd: service name='org.freedesktop.nm_dispatcher' unit='dbus-org.freedesktop.nm-dispatcher.service' requested by ':1.13' (uid=0 pid=897 comm="/usr/sbin/NetworkManager --no-daemon " label="unconfined")
+мая 18 02:55:01 eduard-HKD-WXX NetworkManager[897]: <info>  [1652817301.9258] dhcp6 (wlp0s20f3): option ip6_address          => 'fd01::4023:e039:1dfa:ff2b'
+мая 18 02:55:01 eduard-HKD-WXX NetworkManager[897]: <info>  [1652817301.9259] dhcp6 (wlp0s20f3): state changed bound -> bound
+мая 18 02:55:01 eduard-HKD-WXX systemd[1]: Starting Network Manager Script Dispatcher Service...
+-- Subject: Начинается запуск юнита NetworkManager-dispatcher.service
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- Начат процесс запуска юнита NetworkManager-dispatcher.service.
+мая 18 02:55:01 eduard-HKD-WXX dbus-daemon[895]: [system] Successfully activated service 'org.freedesktop.nm_dispatcher'
+мая 18 02:55:01 eduard-HKD-WXX systemd[1]: Started Network Manager Script Dispatcher Service.
+-- Subject: Запуск юнита NetworkManager-dispatcher.service завершен
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- Процесс запуска юнита NetworkManager-dispatcher.service был завершен.
+-- 
+-- Результат: done.
+мая 18 02:55:02 eduard-HKD-WXX kernel: br-5b085080a970: port 2(veth8ff41eb) entered blocking state
+мая 18 02:55:02 eduard-HKD-WXX kernel: br-5b085080a970: port 2(veth8ff41eb) entered disabled state
+мая 18 02:55:02 eduard-HKD-WXX kernel: device veth8ff41eb entered promiscuous mode
+мая 18 02:55:02 eduard-HKD-WXX kernel: br-5b085080a970: port 2(veth8ff41eb) entered blocking state
+мая 18 02:55:02 eduard-HKD-WXX kernel: br-5b085080a970: port 2(veth8ff41eb) entered forwarding state
+мая 18 02:55:02 eduard-HKD-WXX kernel: br-5b085080a970: port 2(veth8ff41eb) entered disabled state
+мая 18 02:55:02 eduard-HKD-WXX charon[79348]: 10[KNL] interface veth8ff41eb activated
+мая 18 02:55:02 eduard-HKD-WXX NetworkManager[897]: <info>  [1652817302.8041] manager: (vethf60cdfc): new Veth device (/org/freedesktop/NetworkManager/Devices/1981)
+мая 18 02:55:02 eduard-HKD-WXX NetworkManager[897]: <info>  [1652817302.8059] manager: (veth8ff41eb): new Veth device (/org/freedesktop/NetworkManager/Devices/1982)
+мая 18 02:55:02 eduard-HKD-WXX systemd-udevd[152920]: ethtool: autonegotiation is unset or enabled, the speed and duplex are not writable.
+мая 18 02:55:02 eduard-HKD-WXX systemd-udevd[152921]: ethtool: autonegotiation is unset or enabled, the speed and duplex are not writable.
+мая 18 02:55:02 eduard-HKD-WXX systemd-udevd[152920]: Using default interface naming scheme 'v245'.
+мая 18 02:55:02 eduard-HKD-WXX systemd-udevd[152920]: [0;1;38;5;185m[0;1;39m[0;1;38;5;185mvethf60cdfc: Could not generate persistent MAC: No data available[0m
+мая 18 02:55:02 eduard-HKD-WXX systemd-udevd[152921]: Using default interface naming scheme 'v245'.
+мая 18 02:55:02 eduard-HKD-WXX systemd-udevd[152921]: [0;1;38;5;185m[0;1;39m[0;1;38;5;185mveth8ff41eb: Could not generate persistent MAC: No data available[0m
+мая 18 02:55:02 eduard-HKD-WXX docker.dockerd[2481]: time="2022-05-18T02:55:02.830521043+07:00" level=info msg="starting signal loop" namespace=moby path=/run/snap.docker/containerd/daemon/io.containerd.runtime.v2.task/moby/eeb5b75607f7fafcff8cf8fbdbd2b7014983ab6eba91cfa53e6b0361859e731b pid=152955
+мая 18 02:55:03 eduard-HKD-WXX charon[79348]: 13[KNL] interface vethf60cdfc deleted
+мая 18 02:55:03 eduard-HKD-WXX kernel: eth0: renamed from vethf60cdfc
+мая 18 02:55:03 eduard-HKD-WXX NetworkManager[897]: <info>  [1652817303.0247] device (veth8ff41eb): carrier: link connected
+мая 18 02:55:03 eduard-HKD-WXX gnome-shell[2641]: [0;1;39m[0;1;31m[0;1;39mRemoving a network device that was not added[0m
+мая 18 02:55:03 eduard-HKD-WXX kernel: IPv6: ADDRCONF(NETDEV_CHANGE): veth8ff41eb: link becomes ready
+мая 18 02:55:03 eduard-HKD-WXX kernel: br-5b085080a970: port 2(veth8ff41eb) entered blocking state
+мая 18 02:55:03 eduard-HKD-WXX kernel: br-5b085080a970: port 2(veth8ff41eb) entered forwarding state
+мая 18 02:55:03 eduard-HKD-WXX kernel: br-5b085080a970: port 2(veth8ff41eb) entered disabled state
+мая 18 02:55:03 eduard-HKD-WXX kernel: vethf60cdfc: renamed from eth0
+мая 18 02:55:03 eduard-HKD-WXX systemd-udevd[152920]: ethtool: autonegotiation is unset or enabled, the speed and duplex are not writable.
+мая 18 02:55:03 eduard-HKD-WXX charon[79348]: 05[KNL] interface veth8ff41eb deactivated
+мая 18 02:55:03 eduard-HKD-WXX kernel: br-5b085080a970: port 2(veth8ff41eb) entered disabled state
+мая 18 02:55:03 eduard-HKD-WXX charon[79348]: 10[KNL] interface vethf60cdfc deleted
+мая 18 02:55:03 eduard-HKD-WXX charon[79348]: 16[KNL] interface veth8ff41eb deleted
+мая 18 02:55:03 eduard-HKD-WXX kernel: device veth8ff41eb left promiscuous mode
+мая 18 02:55:03 eduard-HKD-WXX kernel: br-5b085080a970: port 2(veth8ff41eb) entered disabled state
+мая 18 02:55:03 eduard-HKD-WXX systemd-udevd[152920]: [0;1;31m[0;1;39m[0;1;31mvethf60cdfc: Failed to get link config: No such device[0m
+мая 18 02:55:03 eduard-HKD-WXX NetworkManager[897]: <info>  [1652817303.2600] device (vethf60cdfc): driver 'veth' does not support carrier detection.
+мая 18 02:55:03 eduard-HKD-WXX NetworkManager[897]: <info>  [1652817303.2608] manager: (vethf60cdfc): new Veth device (/org/freedesktop/NetworkManager/Devices/1983)
+мая 18 02:55:03 eduard-HKD-WXX NetworkManager[897]: <info>  [1652817303.2668] device (veth8ff41eb): released from master device br-5b085080a970
+мая 18 02:55:03 eduard-HKD-WXX gnome-shell[2641]: [0;1;39m[0;1;31m[0;1;39mRemoving a network device that was not added[0m
+мая 18 02:55:03 eduard-HKD-WXX gnome-shell[2641]: [0;1;39m[0;1;31m[0;1;39mRemoving a network device that was not added[0m
+мая 18 02:55:12 eduard-HKD-WXX systemd[1]: NetworkManager-dispatcher.service: Succeeded.
+-- Subject: Unit succeeded
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- The unit NetworkManager-dispatcher.service has successfully entered the 'dead' state.
+мая 18 02:55:23 eduard-HKD-WXX charon[79348]: 05[IKE] sending keep alive to 98.103.101.206[4500]
+мая 18 02:55:30 eduard-HKD-WXX audit[153117]: [0;34m[0;34mSECCOMP auid=1000 uid=1000 gid=1000 ses=3 subj=snap.chromium.chromium pid=153117 comm="chrome" exe="/snap/chromium/1993/usr/lib/chromium-browser/chrome" sig=0 arch=c000003e syscall=330 compat=0 ip=0x7fa0fa16103b code=0x50000[0m
+мая 18 02:55:30 eduard-HKD-WXX kernel: [0;1;39m[0;1;31m[0;1;39maudit: type=1326 audit(1652817330.853:1581): auid=1000 uid=1000 gid=1000 ses=3 subj=snap.chromium.chromium pid=153117 comm="chrome" exe="/snap/chromium/1993/usr/lib/chromium-browser/chrome" sig=0 arch=c000003e syscall=330 compat=0 ip=0x7fa0fa16103b code=0x50000[0m
+мая 18 02:55:30 eduard-HKD-WXX audit[153136]: [0;34m[0;34mSECCOMP auid=1000 uid=1000 gid=1000 ses=3 subj=snap.chromium.chromium pid=153136 comm="chrome" exe="/snap/chromium/1993/usr/lib/chromium-browser/chrome" sig=0 arch=c000003e syscall=330 compat=0 ip=0x7fa0fa16103b code=0x50000[0m
+мая 18 02:55:30 eduard-HKD-WXX kernel: [0;1;39m[0;1;31m[0;1;39maudit: type=1326 audit(1652817330.985:1582): auid=1000 uid=1000 gid=1000 ses=3 subj=snap.chromium.chromium pid=153136 comm="chrome" exe="/snap/chromium/1993/usr/lib/chromium-browser/chrome" sig=0 arch=c000003e syscall=330 compat=0 ip=0x7fa0fa16103b code=0x50000[0m
+мая 18 02:55:32 eduard-HKD-WXX gnome-shell[2641]: Window manager warning: Overwriting existing binding of keysym 31 with keysym 31 (keycode a).
+мая 18 02:55:32 eduard-HKD-WXX gnome-shell[2641]: Window manager warning: Overwriting existing binding of keysym 32 with keysym 32 (keycode b).
+мая 18 02:55:32 eduard-HKD-WXX gnome-shell[2641]: Window manager warning: Overwriting existing binding of keysym 33 with keysym 33 (keycode c).
+мая 18 02:55:32 eduard-HKD-WXX gnome-shell[2641]: Window manager warning: Overwriting existing binding of keysym 34 with keysym 34 (keycode d).
+мая 18 02:55:32 eduard-HKD-WXX gnome-shell[2641]: Window manager warning: Overwriting existing binding of keysym 35 with keysym 35 (keycode e).
+мая 18 02:55:32 eduard-HKD-WXX gnome-shell[2641]: Window manager warning: Overwriting existing binding of keysym 36 with keysym 36 (keycode f).
+мая 18 02:55:32 eduard-HKD-WXX gnome-shell[2641]: Window manager warning: Overwriting existing binding of keysym 38 with keysym 38 (keycode 11).
+мая 18 02:55:32 eduard-HKD-WXX gnome-shell[2641]: Window manager warning: Overwriting existing binding of keysym 39 with keysym 39 (keycode 12).
+мая 18 02:55:32 eduard-HKD-WXX gnome-shell[2641]: Window manager warning: Overwriting existing binding of keysym 37 with keysym 37 (keycode 10).
+мая 18 02:55:34 eduard-HKD-WXX gnome-shell[2641]: Window manager warning: Overwriting existing binding of keysym 31 with keysym 31 (keycode a).
+мая 18 02:55:34 eduard-HKD-WXX gnome-shell[2641]: Window manager warning: Overwriting existing binding of keysym 32 with keysym 32 (keycode b).
+мая 18 02:55:34 eduard-HKD-WXX gnome-shell[2641]: Window manager warning: Overwriting existing binding of keysym 33 with keysym 33 (keycode c).
+мая 18 02:55:34 eduard-HKD-WXX gnome-shell[2641]: Window manager warning: Overwriting existing binding of keysym 34 with keysym 34 (keycode d).
+мая 18 02:55:34 eduard-HKD-WXX gnome-shell[2641]: Window manager warning: Overwriting existing binding of keysym 35 with keysym 35 (keycode e).
+мая 18 02:55:34 eduard-HKD-WXX gnome-shell[2641]: Window manager warning: Overwriting existing binding of keysym 36 with keysym 36 (keycode f).
+мая 18 02:55:34 eduard-HKD-WXX gnome-shell[2641]: Window manager warning: Overwriting existing binding of keysym 38 with keysym 38 (keycode 11).
+мая 18 02:55:34 eduard-HKD-WXX gnome-shell[2641]: Window manager warning: Overwriting existing binding of keysym 39 with keysym 39 (keycode 12).
+мая 18 02:55:34 eduard-HKD-WXX gnome-shell[2641]: Window manager warning: Overwriting existing binding of keysym 37 with keysym 37 (keycode 10).
+мая 18 02:55:36 eduard-HKD-WXX audit[153182]: [0;34m[0;34mSECCOMP auid=1000 uid=1000 gid=1000 ses=3 subj=snap.chromium.chromium pid=153182 comm="chrome" exe="/snap/chromium/1993/usr/lib/chromium-browser/chrome" sig=0 arch=c000003e syscall=330 compat=0 ip=0x7fa0fa16103b code=0x50000[0m
+мая 18 02:55:36 eduard-HKD-WXX kernel: [0;1;39m[0;1;31m[0;1;39maudit: type=1326 audit(1652817336.873:1583): auid=1000 uid=1000 gid=1000 ses=3 subj=snap.chromium.chromium pid=153182 comm="chrome" exe="/snap/chromium/1993/usr/lib/chromium-browser/chrome" sig=0 arch=c000003e syscall=330 compat=0 ip=0x7fa0fa16103b code=0x50000[0m
+мая 18 02:55:43 eduard-HKD-WXX charon[79348]: 08[IKE] sending keep alive to 98.103.101.206[4500]
+мая 18 02:55:46 eduard-HKD-WXX audit[153210]: [0;34m[0;34mSECCOMP auid=1000 uid=1000 gid=1000 ses=3 subj=snap.chromium.chromium pid=153210 comm="chrome" exe="/snap/chromium/1993/usr/lib/chromium-browser/chrome" sig=0 arch=c000003e syscall=330 compat=0 ip=0x7fa0fa16103b code=0x50000[0m
+мая 18 02:55:46 eduard-HKD-WXX kernel: [0;1;39m[0;1;31m[0;1;39maudit: type=1326 audit(1652817346.589:1584): auid=1000 uid=1000 gid=1000 ses=3 subj=snap.chromium.chromium pid=153210 comm="chrome" exe="/snap/chromium/1993/usr/lib/chromium-browser/chrome" sig=0 arch=c000003e syscall=330 compat=0 ip=0x7fa0fa16103b code=0x50000[0m
+мая 18 02:56:03 eduard-HKD-WXX kernel: br-5b085080a970: port 2(vethfe9657c) entered blocking state
+мая 18 02:56:03 eduard-HKD-WXX kernel: br-5b085080a970: port 2(vethfe9657c) entered disabled state
+мая 18 02:56:03 eduard-HKD-WXX kernel: device vethfe9657c entered promiscuous mode
+мая 18 02:56:03 eduard-HKD-WXX kernel: br-5b085080a970: port 2(vethfe9657c) entered blocking state
+мая 18 02:56:03 eduard-HKD-WXX kernel: br-5b085080a970: port 2(vethfe9657c) entered forwarding state
+мая 18 02:56:03 eduard-HKD-WXX charon[79348]: 06[KNL] interface vethfe9657c activated
+мая 18 02:56:03 eduard-HKD-WXX NetworkManager[897]: <info>  [1652817363.1523] manager: (vethec4f813): new Veth device (/org/freedesktop/NetworkManager/Devices/1984)
+мая 18 02:56:03 eduard-HKD-WXX NetworkManager[897]: <info>  [1652817363.1539] manager: (vethfe9657c): new Veth device (/org/freedesktop/NetworkManager/Devices/1985)
+мая 18 02:56:03 eduard-HKD-WXX systemd-udevd[153233]: ethtool: autonegotiation is unset or enabled, the speed and duplex are not writable.
+мая 18 02:56:03 eduard-HKD-WXX kernel: br-5b085080a970: port 2(vethfe9657c) entered disabled state
+мая 18 02:56:03 eduard-HKD-WXX systemd-udevd[153235]: ethtool: autonegotiation is unset or enabled, the speed and duplex are not writable.
+мая 18 02:56:03 eduard-HKD-WXX systemd-udevd[153233]: Using default interface naming scheme 'v245'.
+мая 18 02:56:03 eduard-HKD-WXX systemd-udevd[153233]: [0;1;38;5;185m[0;1;39m[0;1;38;5;185mvethec4f813: Could not generate persistent MAC: No data available[0m
+мая 18 02:56:03 eduard-HKD-WXX systemd-udevd[153235]: Using default interface naming scheme 'v245'.
+мая 18 02:56:03 eduard-HKD-WXX systemd-udevd[153235]: [0;1;38;5;185m[0;1;39m[0;1;38;5;185mvethfe9657c: Could not generate persistent MAC: No data available[0m
+мая 18 02:56:03 eduard-HKD-WXX docker.dockerd[2481]: time="2022-05-18T02:56:03.196204937+07:00" level=info msg="starting signal loop" namespace=moby path=/run/snap.docker/containerd/daemon/io.containerd.runtime.v2.task/moby/eeb5b75607f7fafcff8cf8fbdbd2b7014983ab6eba91cfa53e6b0361859e731b pid=153267
+мая 18 02:56:03 eduard-HKD-WXX charon[79348]: 11[KNL] interface vethec4f813 deleted
+мая 18 02:56:03 eduard-HKD-WXX kernel: eth0: renamed from vethec4f813
+мая 18 02:56:03 eduard-HKD-WXX NetworkManager[897]: <info>  [1652817363.4896] device (vethfe9657c): carrier: link connected
+мая 18 02:56:03 eduard-HKD-WXX kernel: IPv6: ADDRCONF(NETDEV_CHANGE): vethfe9657c: link becomes ready
+мая 18 02:56:03 eduard-HKD-WXX kernel: br-5b085080a970: port 2(vethfe9657c) entered blocking state
+мая 18 02:56:03 eduard-HKD-WXX kernel: br-5b085080a970: port 2(vethfe9657c) entered forwarding state
+мая 18 02:56:03 eduard-HKD-WXX gnome-shell[2641]: [0;1;39m[0;1;31m[0;1;39mRemoving a network device that was not added[0m
+мая 18 02:56:03 eduard-HKD-WXX kernel: br-5b085080a970: port 2(vethfe9657c) entered disabled state
+мая 18 02:56:03 eduard-HKD-WXX kernel: vethec4f813: renamed from eth0
+мая 18 02:56:03 eduard-HKD-WXX systemd-udevd[153242]: ethtool: autonegotiation is unset or enabled, the speed and duplex are not writable.
+мая 18 02:56:03 eduard-HKD-WXX charon[79348]: 10[KNL] interface vethfe9657c deactivated
+мая 18 02:56:03 eduard-HKD-WXX NetworkManager[897]: <info>  [1652817363.7888] manager: (vethec4f813): new Veth device (/org/freedesktop/NetworkManager/Devices/1986)
+мая 18 02:56:03 eduard-HKD-WXX systemd-udevd[153242]: Using default interface naming scheme 'v245'.
+мая 18 02:56:03 eduard-HKD-WXX charon[79348]: 12[KNL] interface vethec4f813 deleted
+мая 18 02:56:03 eduard-HKD-WXX charon[79348]: 13[KNL] interface vethfe9657c deleted
+мая 18 02:56:03 eduard-HKD-WXX kernel: br-5b085080a970: port 2(vethfe9657c) entered disabled state
+мая 18 02:56:03 eduard-HKD-WXX kernel: device vethfe9657c left promiscuous mode
+мая 18 02:56:03 eduard-HKD-WXX kernel: br-5b085080a970: port 2(vethfe9657c) entered disabled state
+мая 18 02:56:03 eduard-HKD-WXX systemd-udevd[153242]: [0;1;31m[0;1;39m[0;1;31mvethec4f813: Failed to get link config: No such device[0m
+мая 18 02:56:03 eduard-HKD-WXX NetworkManager[897]: <info>  [1652817363.8254] device (vethfe9657c): released from master device br-5b085080a970
+мая 18 02:56:03 eduard-HKD-WXX gnome-shell[2641]: [0;1;39m[0;1;31m[0;1;39mRemoving a network device that was not added[0m
+мая 18 02:56:03 eduard-HKD-WXX gnome-shell[2641]: [0;1;39m[0;1;31m[0;1;39mRemoving a network device that was not added[0m
+мая 18 02:56:28 eduard-HKD-WXX audit[153404]: [0;34m[0;34mSECCOMP auid=1000 uid=1000 gid=1000 ses=3 subj=snap.chromium.chromium pid=153404 comm="chrome" exe="/snap/chromium/1993/usr/lib/chromium-browser/chrome" sig=0 arch=c000003e syscall=330 compat=0 ip=0x7fa0fa16103b code=0x50000[0m
+мая 18 02:56:28 eduard-HKD-WXX kernel: [0;1;39m[0;1;31m[0;1;39maudit: type=1326 audit(1652817388.517:1585): auid=1000 uid=1000 gid=1000 ses=3 subj=snap.chromium.chromium pid=153404 comm="chrome" exe="/snap/chromium/1993/usr/lib/chromium-browser/chrome" sig=0 arch=c000003e syscall=330 compat=0 ip=0x7fa0fa16103b code=0x50000[0m
+мая 18 02:56:30 eduard-HKD-WXX audit[153417]: [0;34m[0;34mSECCOMP auid=1000 uid=1000 gid=1000 ses=3 subj=snap.chromium.chromium pid=153417 comm="chrome" exe="/snap/chromium/1993/usr/lib/chromium-browser/chrome" sig=0 arch=c000003e syscall=330 compat=0 ip=0x7fa0fa16103b code=0x50000[0m
+мая 18 02:56:30 eduard-HKD-WXX kernel: [0;1;39m[0;1;31m[0;1;39maudit: type=1326 audit(1652817390.541:1586): auid=1000 uid=1000 gid=1000 ses=3 subj=snap.chromium.chromium pid=153417 comm="chrome" exe="/snap/chromium/1993/usr/lib/chromium-browser/chrome" sig=0 arch=c000003e syscall=330 compat=0 ip=0x7fa0fa16103b code=0x50000[0m
+мая 18 02:56:43 eduard-HKD-WXX charon[79348]: 11[IKE] sending keep alive to 98.103.101.206[4500]
+мая 18 02:56:48 eduard-HKD-WXX audit[153450]: [0;34m[0;34mSECCOMP auid=1000 uid=1000 gid=1000 ses=3 subj=snap.chromium.chromium pid=153450 comm="chrome" exe="/snap/chromium/1993/usr/lib/chromium-browser/chrome" sig=0 arch=c000003e syscall=330 compat=0 ip=0x7fa0fa16103b code=0x50000[0m
+мая 18 02:56:48 eduard-HKD-WXX kernel: [0;1;39m[0;1;31m[0;1;39maudit: type=1326 audit(1652817408.377:1587): auid=1000 uid=1000 gid=1000 ses=3 subj=snap.chromium.chromium pid=153450 comm="chrome" exe="/snap/chromium/1993/usr/lib/chromium-browser/chrome" sig=0 arch=c000003e syscall=330 compat=0 ip=0x7fa0fa16103b code=0x50000[0m
+мая 18 02:57:03 eduard-HKD-WXX charon[79348]: 06[IKE] sending keep alive to 98.103.101.206[4500]
+мая 18 02:57:03 eduard-HKD-WXX charon[79348]: 08[KNL] interface veth2d00727 activated
+мая 18 02:57:03 eduard-HKD-WXX kernel: br-5b085080a970: port 2(veth2d00727) entered blocking state
+мая 18 02:57:03 eduard-HKD-WXX kernel: br-5b085080a970: port 2(veth2d00727) entered disabled state
+мая 18 02:57:03 eduard-HKD-WXX kernel: device veth2d00727 entered promiscuous mode
+мая 18 02:57:03 eduard-HKD-WXX kernel: br-5b085080a970: port 2(veth2d00727) entered blocking state
+мая 18 02:57:03 eduard-HKD-WXX kernel: br-5b085080a970: port 2(veth2d00727) entered forwarding state
+мая 18 02:57:03 eduard-HKD-WXX kernel: br-5b085080a970: port 2(veth2d00727) entered disabled state
+мая 18 02:57:03 eduard-HKD-WXX NetworkManager[897]: <info>  [1652817423.6596] manager: (vethbaace8c): new Veth device (/org/freedesktop/NetworkManager/Devices/1987)
+мая 18 02:57:03 eduard-HKD-WXX NetworkManager[897]: <info>  [1652817423.6602] manager: (veth2d00727): new Veth device (/org/freedesktop/NetworkManager/Devices/1988)
+мая 18 02:57:03 eduard-HKD-WXX systemd-udevd[153479]: ethtool: autonegotiation is unset or enabled, the speed and duplex are not writable.
+мая 18 02:57:03 eduard-HKD-WXX systemd-udevd[153480]: ethtool: autonegotiation is unset or enabled, the speed and duplex are not writable.
+мая 18 02:57:03 eduard-HKD-WXX systemd-udevd[153479]: Using default interface naming scheme 'v245'.
+мая 18 02:57:03 eduard-HKD-WXX systemd-udevd[153479]: [0;1;38;5;185m[0;1;39m[0;1;38;5;185mvethbaace8c: Could not generate persistent MAC: No data available[0m
+мая 18 02:57:03 eduard-HKD-WXX systemd-udevd[153480]: Using default interface naming scheme 'v245'.
+мая 18 02:57:03 eduard-HKD-WXX systemd-udevd[153480]: [0;1;38;5;185m[0;1;39m[0;1;38;5;185mveth2d00727: Could not generate persistent MAC: No data available[0m
+мая 18 02:57:03 eduard-HKD-WXX docker.dockerd[2481]: time="2022-05-18T02:57:03.682001225+07:00" level=info msg="starting signal loop" namespace=moby path=/run/snap.docker/containerd/daemon/io.containerd.runtime.v2.task/moby/eeb5b75607f7fafcff8cf8fbdbd2b7014983ab6eba91cfa53e6b0361859e731b pid=153513
+мая 18 02:57:03 eduard-HKD-WXX charon[79348]: 07[KNL] interface vethbaace8c deleted
+мая 18 02:57:03 eduard-HKD-WXX kernel: eth0: renamed from vethbaace8c
+мая 18 02:57:03 eduard-HKD-WXX NetworkManager[897]: <info>  [1652817423.8821] device (veth2d00727): carrier: link connected
+мая 18 02:57:03 eduard-HKD-WXX kernel: IPv6: ADDRCONF(NETDEV_CHANGE): veth2d00727: link becomes ready
+мая 18 02:57:03 eduard-HKD-WXX kernel: br-5b085080a970: port 2(veth2d00727) entered blocking state
+мая 18 02:57:03 eduard-HKD-WXX kernel: br-5b085080a970: port 2(veth2d00727) entered forwarding state
+мая 18 02:57:03 eduard-HKD-WXX gnome-shell[2641]: [0;1;39m[0;1;31m[0;1;39mRemoving a network device that was not added[0m
+мая 18 02:57:04 eduard-HKD-WXX kernel: br-5b085080a970: port 2(veth2d00727) entered disabled state
+мая 18 02:57:04 eduard-HKD-WXX kernel: vethbaace8c: renamed from eth0
+мая 18 02:57:04 eduard-HKD-WXX systemd-udevd[153479]: ethtool: autonegotiation is unset or enabled, the speed and duplex are not writable.
+мая 18 02:57:04 eduard-HKD-WXX charon[79348]: 15[KNL] interface veth2d00727 deactivated
+мая 18 02:57:04 eduard-HKD-WXX NetworkManager[897]: <info>  [1652817424.0663] manager: (vethbaace8c): new Veth device (/org/freedesktop/NetworkManager/Devices/1989)
+мая 18 02:57:04 eduard-HKD-WXX kernel: br-5b085080a970: port 2(veth2d00727) entered disabled state
+мая 18 02:57:04 eduard-HKD-WXX charon[79348]: 08[KNL] interface vethbaace8c deleted
+мая 18 02:57:04 eduard-HKD-WXX charon[79348]: 10[KNL] interface veth2d00727 deleted
+мая 18 02:57:04 eduard-HKD-WXX kernel: device veth2d00727 left promiscuous mode
+мая 18 02:57:04 eduard-HKD-WXX kernel: br-5b085080a970: port 2(veth2d00727) entered disabled state
+мая 18 02:57:04 eduard-HKD-WXX systemd-udevd[153479]: [0;1;31m[0;1;39m[0;1;31mvethbaace8c: Failed to get link config: No such device[0m
+мая 18 02:57:04 eduard-HKD-WXX NetworkManager[897]: <info>  [1652817424.1052] device (veth2d00727): released from master device br-5b085080a970
+мая 18 02:57:04 eduard-HKD-WXX gnome-shell[2641]: [0;1;39m[0;1;31m[0;1;39mRemoving a network device that was not added[0m
+мая 18 02:57:04 eduard-HKD-WXX gnome-shell[2641]: [0;1;39m[0;1;31m[0;1;39mRemoving a network device that was not added[0m
+мая 18 02:57:13 eduard-HKD-WXX NetworkManager[897]: <info>  [1652817433.9745] dhcp6 (wlp0s20f3): option dhcp6_domain_search  => 'Dlink'
+мая 18 02:57:13 eduard-HKD-WXX NetworkManager[897]: <info>  [1652817433.9745] dhcp6 (wlp0s20f3): option dhcp6_name_servers   => 'fe80::2ad:24ff:fee6:4f40'
+мая 18 02:57:13 eduard-HKD-WXX NetworkManager[897]: <info>  [1652817433.9745] dhcp6 (wlp0s20f3): option ip6_address          => 'fd01::4023:e039:1dfa:ff2b'
+мая 18 02:57:13 eduard-HKD-WXX NetworkManager[897]: <info>  [1652817433.9745] dhcp6 (wlp0s20f3): state changed bound -> bound
+мая 18 02:57:13 eduard-HKD-WXX dbus-daemon[895]: [system] Activating via systemd: service name='org.freedesktop.nm_dispatcher' unit='dbus-org.freedesktop.nm-dispatcher.service' requested by ':1.13' (uid=0 pid=897 comm="/usr/sbin/NetworkManager --no-daemon " label="unconfined")
+мая 18 02:57:13 eduard-HKD-WXX systemd[1]: Starting Network Manager Script Dispatcher Service...
+-- Subject: Начинается запуск юнита NetworkManager-dispatcher.service
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- Начат процесс запуска юнита NetworkManager-dispatcher.service.
+мая 18 02:57:14 eduard-HKD-WXX dbus-daemon[895]: [system] Successfully activated service 'org.freedesktop.nm_dispatcher'
+мая 18 02:57:14 eduard-HKD-WXX systemd[1]: Started Network Manager Script Dispatcher Service.
+-- Subject: Запуск юнита NetworkManager-dispatcher.service завершен
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- Процесс запуска юнита NetworkManager-dispatcher.service был завершен.
+-- 
+-- Результат: done.
+мая 18 02:57:23 eduard-HKD-WXX systemd[1]: NetworkManager-dispatcher.service: Succeeded.
+-- Subject: Unit succeeded
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- The unit NetworkManager-dispatcher.service has successfully entered the 'dead' state.
+мая 18 02:57:26 eduard-HKD-WXX systemd[2476]: Started VTE child process 153647 launched by gnome-terminal-server process 17941.
+-- Subject: Запуск юнита UNIT завершен
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- Процесс запуска юнита UNIT был завершен.
+-- 
+-- Результат: done.
+мая 18 02:57:43 eduard-HKD-WXX charon[79348]: 05[IKE] sending keep alive to 98.103.101.206[4500]
+мая 18 02:57:57 eduard-HKD-WXX php8.1[153702]: [0;38;5;245m[0;1;31m[0;38;5;245mDIGEST-MD5 common mech free[0m
+мая 18 02:58:03 eduard-HKD-WXX charon[79348]: 14[IKE] sending keep alive to 98.103.101.206[4500]
+мая 18 02:58:04 eduard-HKD-WXX charon[79348]: 15[KNL] interface vethb9c16b0 activated
+мая 18 02:58:04 eduard-HKD-WXX NetworkManager[897]: <info>  [1652817484.0087] manager: (veth1532d33): new Veth device (/org/freedesktop/NetworkManager/Devices/1990)
+мая 18 02:58:04 eduard-HKD-WXX NetworkManager[897]: <info>  [1652817484.0109] manager: (vethb9c16b0): new Veth device (/org/freedesktop/NetworkManager/Devices/1991)
+мая 18 02:58:04 eduard-HKD-WXX systemd-udevd[153709]: ethtool: autonegotiation is unset or enabled, the speed and duplex are not writable.
+мая 18 02:58:04 eduard-HKD-WXX kernel: br-5b085080a970: port 2(vethb9c16b0) entered blocking state
+мая 18 02:58:04 eduard-HKD-WXX kernel: br-5b085080a970: port 2(vethb9c16b0) entered disabled state
+мая 18 02:58:04 eduard-HKD-WXX kernel: device vethb9c16b0 entered promiscuous mode
+мая 18 02:58:04 eduard-HKD-WXX systemd-udevd[153710]: ethtool: autonegotiation is unset or enabled, the speed and duplex are not writable.
+мая 18 02:58:04 eduard-HKD-WXX systemd-udevd[153709]: Using default interface naming scheme 'v245'.
+мая 18 02:58:04 eduard-HKD-WXX systemd-udevd[153709]: [0;1;38;5;185m[0;1;39m[0;1;38;5;185mveth1532d33: Could not generate persistent MAC: No data available[0m
+мая 18 02:58:04 eduard-HKD-WXX systemd-udevd[153710]: Using default interface naming scheme 'v245'.
+мая 18 02:58:04 eduard-HKD-WXX systemd-udevd[153710]: [0;1;38;5;185m[0;1;39m[0;1;38;5;185mvethb9c16b0: Could not generate persistent MAC: No data available[0m
+мая 18 02:58:04 eduard-HKD-WXX docker.dockerd[2481]: time="2022-05-18T02:58:04.039190960+07:00" level=info msg="starting signal loop" namespace=moby path=/run/snap.docker/containerd/daemon/io.containerd.runtime.v2.task/moby/eeb5b75607f7fafcff8cf8fbdbd2b7014983ab6eba91cfa53e6b0361859e731b pid=153745
+мая 18 02:58:04 eduard-HKD-WXX charon[79348]: 08[KNL] interface veth1532d33 deleted
+мая 18 02:58:04 eduard-HKD-WXX kernel: eth0: renamed from veth1532d33
+мая 18 02:58:04 eduard-HKD-WXX NetworkManager[897]: <info>  [1652817484.2567] device (vethb9c16b0): carrier: link connected
+мая 18 02:58:04 eduard-HKD-WXX gnome-shell[2641]: [0;1;39m[0;1;31m[0;1;39mRemoving a network device that was not added[0m
+мая 18 02:58:04 eduard-HKD-WXX kernel: IPv6: ADDRCONF(NETDEV_CHANGE): vethb9c16b0: link becomes ready
+мая 18 02:58:04 eduard-HKD-WXX kernel: br-5b085080a970: port 2(vethb9c16b0) entered blocking state
+мая 18 02:58:04 eduard-HKD-WXX kernel: br-5b085080a970: port 2(vethb9c16b0) entered forwarding state
+мая 18 02:58:04 eduard-HKD-WXX kernel: br-5b085080a970: port 2(vethb9c16b0) entered disabled state
+мая 18 02:58:04 eduard-HKD-WXX kernel: veth1532d33: renamed from eth0
+мая 18 02:58:04 eduard-HKD-WXX charon[79348]: 09[KNL] interface vethb9c16b0 deactivated
+мая 18 02:58:04 eduard-HKD-WXX kernel: br-5b085080a970: port 2(vethb9c16b0) entered disabled state
+мая 18 02:58:04 eduard-HKD-WXX charon[79348]: 12[KNL] interface veth1532d33 deleted
+мая 18 02:58:04 eduard-HKD-WXX charon[79348]: 06[KNL] interface vethb9c16b0 deleted
+мая 18 02:58:04 eduard-HKD-WXX kernel: device vethb9c16b0 left promiscuous mode
+мая 18 02:58:04 eduard-HKD-WXX kernel: br-5b085080a970: port 2(vethb9c16b0) entered disabled state
+мая 18 02:58:04 eduard-HKD-WXX systemd-udevd[153709]: [0;1;31m[0;1;39m[0;1;31mveth1532d33: Failed to get link config: No such device[0m
+мая 18 02:58:04 eduard-HKD-WXX NetworkManager[897]: <info>  [1652817484.4721] device (veth1532d33): driver 'veth' does not support carrier detection.
+мая 18 02:58:04 eduard-HKD-WXX NetworkManager[897]: <info>  [1652817484.4727] manager: (veth1532d33): new Veth device (/org/freedesktop/NetworkManager/Devices/1992)
+мая 18 02:58:04 eduard-HKD-WXX NetworkManager[897]: <info>  [1652817484.4780] device (vethb9c16b0): released from master device br-5b085080a970
+мая 18 02:58:04 eduard-HKD-WXX gnome-shell[2641]: [0;1;39m[0;1;31m[0;1;39mRemoving a network device that was not added[0m
+мая 18 02:58:04 eduard-HKD-WXX gnome-shell[2641]: [0;1;39m[0;1;31m[0;1;39mRemoving a network device that was not added[0m
+мая 18 02:58:04 eduard-HKD-WXX systemd-udevd[153709]: [0;1;31m[0;1;39m[0;1;31mveth1532d33: Failed to get link config: No such device[0m
+мая 18 02:58:22 eduard-HKD-WXX php8.1[154323]: [0;38;5;245m[0;1;31m[0;38;5;245mDIGEST-MD5 common mech free[0m
+мая 18 02:58:22 eduard-HKD-WXX php8.1[154328]: [0;38;5;245m[0;1;31m[0;38;5;245mDIGEST-MD5 common mech free[0m
+мая 18 02:58:22 eduard-HKD-WXX php8.1[154333]: [0;38;5;245m[0;1;31m[0;38;5;245mDIGEST-MD5 common mech free[0m
+мая 18 02:58:22 eduard-HKD-WXX php[153672]: [0;38;5;245m[0;1;31m[0;38;5;245mDIGEST-MD5 common mech free[0m
+мая 18 02:58:34 eduard-HKD-WXX jetbrains-phpstorm.desktop[9104]: 2022-05-18 02:58:34,165 [44370965]   WARN - riptExternalDefinitionsService - Package @types/lodash@4.14.182 is not installed
+мая 18 02:58:43 eduard-HKD-WXX charon[79348]: 10[IKE] sending keep alive to 98.103.101.206[4500]
+мая 18 02:59:03 eduard-HKD-WXX charon[79348]: 11[IKE] sending keep alive to 98.103.101.206[4500]
+мая 18 02:59:04 eduard-HKD-WXX NetworkManager[897]: <info>  [1652817544.3829] manager: (veth05ec84e): new Veth device (/org/freedesktop/NetworkManager/Devices/1993)
+мая 18 02:59:04 eduard-HKD-WXX NetworkManager[897]: <info>  [1652817544.3835] manager: (veth9e2f944): new Veth device (/org/freedesktop/NetworkManager/Devices/1994)
+мая 18 02:59:04 eduard-HKD-WXX systemd-udevd[154372]: ethtool: autonegotiation is unset or enabled, the speed and duplex are not writable.
+мая 18 02:59:04 eduard-HKD-WXX systemd-udevd[154373]: ethtool: autonegotiation is unset or enabled, the speed and duplex are not writable.
+мая 18 02:59:04 eduard-HKD-WXX systemd-udevd[154372]: Using default interface naming scheme 'v245'.
+мая 18 02:59:04 eduard-HKD-WXX systemd-udevd[154372]: [0;1;38;5;185m[0;1;39m[0;1;38;5;185mveth05ec84e: Could not generate persistent MAC: No data available[0m
+мая 18 02:59:04 eduard-HKD-WXX systemd-udevd[154373]: Using default interface naming scheme 'v245'.
+мая 18 02:59:04 eduard-HKD-WXX systemd-udevd[154373]: [0;1;38;5;185m[0;1;39m[0;1;38;5;185mveth9e2f944: Could not generate persistent MAC: No data available[0m
+мая 18 02:59:04 eduard-HKD-WXX charon[79348]: 07[KNL] interface veth9e2f944 activated
+мая 18 02:59:04 eduard-HKD-WXX kernel: br-5b085080a970: port 2(veth9e2f944) entered blocking state
+мая 18 02:59:04 eduard-HKD-WXX kernel: br-5b085080a970: port 2(veth9e2f944) entered disabled state
+мая 18 02:59:04 eduard-HKD-WXX kernel: device veth9e2f944 entered promiscuous mode
+мая 18 02:59:04 eduard-HKD-WXX docker.dockerd[2481]: time="2022-05-18T02:59:04.616272172+07:00" level=info msg="starting signal loop" namespace=moby path=/run/snap.docker/containerd/daemon/io.containerd.runtime.v2.task/moby/eeb5b75607f7fafcff8cf8fbdbd2b7014983ab6eba91cfa53e6b0361859e731b pid=154409
+мая 18 02:59:05 eduard-HKD-WXX charon[79348]: 10[KNL] interface veth05ec84e deleted
+мая 18 02:59:05 eduard-HKD-WXX kernel: eth0: renamed from veth05ec84e
+мая 18 02:59:05 eduard-HKD-WXX NetworkManager[897]: <info>  [1652817545.2527] device (veth9e2f944): carrier: link connected
+мая 18 02:59:05 eduard-HKD-WXX gnome-shell[2641]: [0;1;39m[0;1;31m[0;1;39mRemoving a network device that was not added[0m
+мая 18 02:59:05 eduard-HKD-WXX kernel: IPv6: ADDRCONF(NETDEV_CHANGE): veth9e2f944: link becomes ready
+мая 18 02:59:05 eduard-HKD-WXX kernel: br-5b085080a970: port 2(veth9e2f944) entered blocking state
+мая 18 02:59:05 eduard-HKD-WXX kernel: br-5b085080a970: port 2(veth9e2f944) entered forwarding state
+мая 18 02:59:05 eduard-HKD-WXX kernel: br-5b085080a970: port 2(veth9e2f944) entered disabled state
+мая 18 02:59:05 eduard-HKD-WXX kernel: veth05ec84e: renamed from eth0
+мая 18 02:59:05 eduard-HKD-WXX systemd-udevd[154379]: ethtool: autonegotiation is unset or enabled, the speed and duplex are not writable.
+мая 18 02:59:05 eduard-HKD-WXX charon[79348]: 09[KNL] interface veth9e2f944 deactivated
+мая 18 02:59:05 eduard-HKD-WXX charon[79348]: 06[KNL] interface veth05ec84e deleted
+мая 18 02:59:05 eduard-HKD-WXX kernel: br-5b085080a970: port 2(veth9e2f944) entered disabled state
+мая 18 02:59:05 eduard-HKD-WXX kernel: device veth9e2f944 left promiscuous mode
+мая 18 02:59:05 eduard-HKD-WXX kernel: br-5b085080a970: port 2(veth9e2f944) entered disabled state
+мая 18 02:59:05 eduard-HKD-WXX charon[79348]: 07[KNL] interface veth9e2f944 deleted
+мая 18 02:59:05 eduard-HKD-WXX systemd-udevd[154379]: [0;1;38;5;185m[0;1;39m[0;1;38;5;185methtool: could not get ethtool features for veth05ec84e[0m
+мая 18 02:59:05 eduard-HKD-WXX systemd-udevd[154379]: [0;1;38;5;185m[0;1;39m[0;1;38;5;185mCould not set offload features of veth05ec84e: No such device[0m
+мая 18 02:59:05 eduard-HKD-WXX NetworkManager[897]: <info>  [1652817545.5359] device (veth05ec84e): driver '(null)' does not support carrier detection.
+мая 18 02:59:05 eduard-HKD-WXX NetworkManager[897]: <info>  [1652817545.5361] device (veth05ec84e): driver 'veth' does not support carrier detection.
+мая 18 02:59:05 eduard-HKD-WXX NetworkManager[897]: <info>  [1652817545.5364] manager: (veth05ec84e): new Veth device (/org/freedesktop/NetworkManager/Devices/1995)
+мая 18 02:59:05 eduard-HKD-WXX NetworkManager[897]: <info>  [1652817545.5388] device (veth9e2f944): released from master device br-5b085080a970
+мая 18 02:59:05 eduard-HKD-WXX gnome-shell[2641]: [0;1;39m[0;1;31m[0;1;39mRemoving a network device that was not added[0m
+мая 18 02:59:05 eduard-HKD-WXX gnome-shell[2641]: [0;1;39m[0;1;31m[0;1;39mRemoving a network device that was not added[0m
+мая 18 02:59:05 eduard-HKD-WXX systemd-udevd[154379]: [0;1;31m[0;1;39m[0;1;31mveth05ec84e: Failed to get link config: No such device[0m
+мая 18 02:59:25 eduard-HKD-WXX NetworkManager[897]: <info>  [1652817565.5466] dhcp6 (wlp0s20f3): option dhcp6_domain_search  => 'Dlink'
+мая 18 02:59:25 eduard-HKD-WXX NetworkManager[897]: <info>  [1652817565.5467] dhcp6 (wlp0s20f3): option dhcp6_name_servers   => 'fe80::2ad:24ff:fee6:4f40'
+мая 18 02:59:25 eduard-HKD-WXX NetworkManager[897]: <info>  [1652817565.5467] dhcp6 (wlp0s20f3): option ip6_address          => 'fd01::4023:e039:1dfa:ff2b'
+мая 18 02:59:25 eduard-HKD-WXX NetworkManager[897]: <info>  [1652817565.5467] dhcp6 (wlp0s20f3): state changed bound -> bound
+мая 18 02:59:25 eduard-HKD-WXX dbus-daemon[895]: [system] Activating via systemd: service name='org.freedesktop.nm_dispatcher' unit='dbus-org.freedesktop.nm-dispatcher.service' requested by ':1.13' (uid=0 pid=897 comm="/usr/sbin/NetworkManager --no-daemon " label="unconfined")
+мая 18 02:59:25 eduard-HKD-WXX systemd[1]: Starting Network Manager Script Dispatcher Service...
+-- Subject: Начинается запуск юнита NetworkManager-dispatcher.service
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- Начат процесс запуска юнита NetworkManager-dispatcher.service.
+мая 18 02:59:25 eduard-HKD-WXX dbus-daemon[895]: [system] Successfully activated service 'org.freedesktop.nm_dispatcher'
+мая 18 02:59:25 eduard-HKD-WXX systemd[1]: Started Network Manager Script Dispatcher Service.
+-- Subject: Запуск юнита NetworkManager-dispatcher.service завершен
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- Процесс запуска юнита NetworkManager-dispatcher.service был завершен.
+-- 
+-- Результат: done.
+мая 18 02:59:35 eduard-HKD-WXX systemd[1]: NetworkManager-dispatcher.service: Succeeded.
+-- Subject: Unit succeeded
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- The unit NetworkManager-dispatcher.service has successfully entered the 'dead' state.
+мая 18 02:59:43 eduard-HKD-WXX charon[79348]: 06[IKE] sending keep alive to 98.103.101.206[4500]
+мая 18 03:00:03 eduard-HKD-WXX charon[79348]: 15[IKE] sending keep alive to 98.103.101.206[4500]
+мая 18 03:00:04 eduard-HKD-WXX sudo[154604]: [0;1;39m[0;1;31m[0;1;39m  eduard : TTY=pts/12 ; PWD=/home/eduard/Projects/test-project ; USER=root ; COMMAND=/usr/bin/su[0m
+мая 18 03:00:04 eduard-HKD-WXX sudo[154604]: pam_unix(sudo:session): session opened for user root by (uid=0)
+мая 18 03:00:04 eduard-HKD-WXX su[154605]: [0;1;39m[0;1;31m[0;1;39m(to root) eduard on pts/12[0m
+мая 18 03:00:04 eduard-HKD-WXX su[154605]: pam_unix(su:session): session opened for user root by (uid=0)
+мая 18 03:00:05 eduard-HKD-WXX charon[79348]: 09[KNL] interface veth6076e46 activated
+мая 18 03:00:05 eduard-HKD-WXX kernel: br-5b085080a970: port 2(veth6076e46) entered blocking state
+мая 18 03:00:05 eduard-HKD-WXX kernel: br-5b085080a970: port 2(veth6076e46) entered disabled state
+мая 18 03:00:05 eduard-HKD-WXX kernel: device veth6076e46 entered promiscuous mode
+мая 18 03:00:05 eduard-HKD-WXX kernel: br-5b085080a970: port 2(veth6076e46) entered blocking state
+мая 18 03:00:05 eduard-HKD-WXX kernel: br-5b085080a970: port 2(veth6076e46) entered forwarding state
+мая 18 03:00:05 eduard-HKD-WXX kernel: br-5b085080a970: port 2(veth6076e46) entered disabled state
+мая 18 03:00:05 eduard-HKD-WXX NetworkManager[897]: <info>  [1652817605.4042] manager: (veth665fa1f): new Veth device (/org/freedesktop/NetworkManager/Devices/1996)
+мая 18 03:00:05 eduard-HKD-WXX NetworkManager[897]: <info>  [1652817605.4060] manager: (veth6076e46): new Veth device (/org/freedesktop/NetworkManager/Devices/1997)
+мая 18 03:00:05 eduard-HKD-WXX systemd-udevd[154614]: ethtool: autonegotiation is unset or enabled, the speed and duplex are not writable.
+мая 18 03:00:05 eduard-HKD-WXX systemd-udevd[154613]: ethtool: autonegotiation is unset or enabled, the speed and duplex are not writable.
+мая 18 03:00:05 eduard-HKD-WXX systemd-udevd[154614]: Using default interface naming scheme 'v245'.
+мая 18 03:00:05 eduard-HKD-WXX systemd-udevd[154614]: [0;1;38;5;185m[0;1;39m[0;1;38;5;185mveth6076e46: Could not generate persistent MAC: No data available[0m
+мая 18 03:00:05 eduard-HKD-WXX systemd-udevd[154613]: Using default interface naming scheme 'v245'.
+мая 18 03:00:05 eduard-HKD-WXX systemd-udevd[154613]: [0;1;38;5;185m[0;1;39m[0;1;38;5;185mveth665fa1f: Could not generate persistent MAC: No data available[0m
+мая 18 03:00:05 eduard-HKD-WXX docker.dockerd[2481]: time="2022-05-18T03:00:05.448313992+07:00" level=info msg="starting signal loop" namespace=moby path=/run/snap.docker/containerd/daemon/io.containerd.runtime.v2.task/moby/eeb5b75607f7fafcff8cf8fbdbd2b7014983ab6eba91cfa53e6b0361859e731b pid=154650
+мая 18 03:00:05 eduard-HKD-WXX charon[79348]: 13[KNL] interface veth665fa1f deleted
+мая 18 03:00:05 eduard-HKD-WXX kernel: eth0: renamed from veth665fa1f
+мая 18 03:00:05 eduard-HKD-WXX NetworkManager[897]: <info>  [1652817605.8260] device (veth6076e46): carrier: link connected
+мая 18 03:00:05 eduard-HKD-WXX kernel: IPv6: ADDRCONF(NETDEV_CHANGE): veth6076e46: link becomes ready
+мая 18 03:00:05 eduard-HKD-WXX kernel: br-5b085080a970: port 2(veth6076e46) entered blocking state
+мая 18 03:00:05 eduard-HKD-WXX kernel: br-5b085080a970: port 2(veth6076e46) entered forwarding state
+мая 18 03:00:05 eduard-HKD-WXX gnome-shell[2641]: [0;1;39m[0;1;31m[0;1;39mRemoving a network device that was not added[0m
+мая 18 03:00:06 eduard-HKD-WXX kernel: br-5b085080a970: port 2(veth6076e46) entered disabled state
+мая 18 03:00:06 eduard-HKD-WXX kernel: veth665fa1f: renamed from eth0
+мая 18 03:00:06 eduard-HKD-WXX charon[79348]: 06[KNL] interface veth6076e46 deactivated
+мая 18 03:00:06 eduard-HKD-WXX charon[79348]: 09[KNL] interface veth665fa1f deleted
+мая 18 03:00:06 eduard-HKD-WXX kernel: br-5b085080a970: port 2(veth6076e46) entered disabled state
+мая 18 03:00:06 eduard-HKD-WXX kernel: device veth6076e46 left promiscuous mode
+мая 18 03:00:06 eduard-HKD-WXX kernel: br-5b085080a970: port 2(veth6076e46) entered disabled state
+мая 18 03:00:06 eduard-HKD-WXX charon[79348]: 12[KNL] interface veth6076e46 deleted
+мая 18 03:00:06 eduard-HKD-WXX systemd-udevd[154613]: [0;1;31m[0;1;39m[0;1;31mveth665fa1f: Failed to get link config: No such device[0m
+мая 18 03:00:06 eduard-HKD-WXX NetworkManager[897]: <info>  [1652817606.1202] device (veth665fa1f): driver '(null)' does not support carrier detection.
+мая 18 03:00:06 eduard-HKD-WXX NetworkManager[897]: <info>  [1652817606.1204] device (veth665fa1f): driver 'veth' does not support carrier detection.
+мая 18 03:00:06 eduard-HKD-WXX NetworkManager[897]: <info>  [1652817606.1211] manager: (veth665fa1f): new Veth device (/org/freedesktop/NetworkManager/Devices/1998)
+мая 18 03:00:06 eduard-HKD-WXX NetworkManager[897]: <info>  [1652817606.1266] device (veth6076e46): released from master device br-5b085080a970
+мая 18 03:00:06 eduard-HKD-WXX gnome-shell[2641]: [0;1;39m[0;1;31m[0;1;39mRemoving a network device that was not added[0m
+мая 18 03:00:06 eduard-HKD-WXX gnome-shell[2641]: [0;1;39m[0;1;31m[0;1;39mRemoving a network device that was not added[0m
+мая 18 03:00:06 eduard-HKD-WXX systemd-udevd[154613]: [0;1;31m[0;1;39m[0;1;31mveth665fa1f: Failed to get link config: No such device[0m
+мая 18 03:00:08 eduard-HKD-WXX charon[79348]: 06[KNL] 172.21.0.1 appeared on br-13a30f52d39d
+мая 18 03:00:08 eduard-HKD-WXX systemd-udevd[154613]: ethtool: autonegotiation is unset or enabled, the speed and duplex are not writable.
+мая 18 03:00:08 eduard-HKD-WXX NetworkManager[897]: <info>  [1652817608.6273] manager: (br-13a30f52d39d): new Bridge device (/org/freedesktop/NetworkManager/Devices/1999)
+мая 18 03:00:08 eduard-HKD-WXX charon[79348]: 14[KNL] interface br-13a30f52d39d activated
+мая 18 03:00:08 eduard-HKD-WXX NetworkManager[897]: <info>  [1652817608.6583] device (br-13a30f52d39d): state change: unmanaged -> unavailable (reason 'connection-assumed', sys-iface-state: 'external')
+мая 18 03:00:08 eduard-HKD-WXX avahi-daemon[888]: Joining mDNS multicast group on interface br-13a30f52d39d.IPv4 with address 172.21.0.1.
+мая 18 03:00:08 eduard-HKD-WXX avahi-daemon[888]: New relevant interface br-13a30f52d39d.IPv4 for mDNS.
+мая 18 03:00:08 eduard-HKD-WXX avahi-daemon[888]: Registering new address record for 172.21.0.1 on br-13a30f52d39d.IPv4.
+мая 18 03:00:08 eduard-HKD-WXX NetworkManager[897]: <info>  [1652817608.6653] device (br-13a30f52d39d): state change: unavailable -> disconnected (reason 'connection-assumed', sys-iface-state: 'external')
+мая 18 03:00:08 eduard-HKD-WXX NetworkManager[897]: <info>  [1652817608.6659] device (br-13a30f52d39d): Activation: starting connection 'br-13a30f52d39d' (5700f451-6887-4d51-82c9-22532e4ebf71)
+мая 18 03:00:08 eduard-HKD-WXX NetworkManager[897]: <info>  [1652817608.6683] device (br-13a30f52d39d): state change: disconnected -> prepare (reason 'none', sys-iface-state: 'external')
+мая 18 03:00:08 eduard-HKD-WXX NetworkManager[897]: <info>  [1652817608.6686] device (br-13a30f52d39d): state change: prepare -> config (reason 'none', sys-iface-state: 'external')
+мая 18 03:00:08 eduard-HKD-WXX NetworkManager[897]: <info>  [1652817608.6688] device (br-13a30f52d39d): state change: config -> ip-config (reason 'none', sys-iface-state: 'external')
+мая 18 03:00:08 eduard-HKD-WXX NetworkManager[897]: <info>  [1652817608.6689] device (br-13a30f52d39d): state change: ip-config -> ip-check (reason 'none', sys-iface-state: 'external')
+мая 18 03:00:08 eduard-HKD-WXX dbus-daemon[895]: [system] Activating via systemd: service name='org.freedesktop.nm_dispatcher' unit='dbus-org.freedesktop.nm-dispatcher.service' requested by ':1.13' (uid=0 pid=897 comm="/usr/sbin/NetworkManager --no-daemon " label="unconfined")
+мая 18 03:00:08 eduard-HKD-WXX systemd[1]: Starting Network Manager Script Dispatcher Service...
+-- Subject: Начинается запуск юнита NetworkManager-dispatcher.service
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- Начат процесс запуска юнита NetworkManager-dispatcher.service.
+мая 18 03:00:08 eduard-HKD-WXX dbus-daemon[895]: [system] Successfully activated service 'org.freedesktop.nm_dispatcher'
+мая 18 03:00:08 eduard-HKD-WXX systemd[1]: Started Network Manager Script Dispatcher Service.
+-- Subject: Запуск юнита NetworkManager-dispatcher.service завершен
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- Процесс запуска юнита NetworkManager-dispatcher.service был завершен.
+-- 
+-- Результат: done.
+мая 18 03:00:08 eduard-HKD-WXX NetworkManager[897]: <info>  [1652817608.6766] device (br-13a30f52d39d): state change: ip-check -> secondaries (reason 'none', sys-iface-state: 'external')
+мая 18 03:00:08 eduard-HKD-WXX NetworkManager[897]: <info>  [1652817608.6768] device (br-13a30f52d39d): state change: secondaries -> activated (reason 'none', sys-iface-state: 'external')
+мая 18 03:00:08 eduard-HKD-WXX NetworkManager[897]: <info>  [1652817608.6777] device (br-13a30f52d39d): Activation: successful, device activated.
+мая 18 03:00:18 eduard-HKD-WXX systemd[1]: NetworkManager-dispatcher.service: Succeeded.
+-- Subject: Unit succeeded
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- The unit NetworkManager-dispatcher.service has successfully entered the 'dead' state.
+мая 18 03:00:24 eduard-HKD-WXX chromium_chromium.desktop[6633]: [6633:153130:0518/030024.527311:ERROR:cert_issuer_source_aia.cc(34)] Error parsing cert retrieved from AIA (as DER):
+мая 18 03:00:24 eduard-HKD-WXX chromium_chromium.desktop[6633]: ERROR: Couldn't read tbsCertificate as SEQUENCE
+мая 18 03:00:24 eduard-HKD-WXX chromium_chromium.desktop[6633]: ERROR: Failed parsing Certificate
+мая 18 03:00:24 eduard-HKD-WXX chromium_chromium.desktop[6633]: [6633:153130:0518/030024.534603:ERROR:cert_verify_proc_builtin.cc(681)] CertVerifyProcBuiltin for monitor.calleridrep.com failed:
+мая 18 03:00:24 eduard-HKD-WXX chromium_chromium.desktop[6633]: ----- Certificate i=0 (CN=monitor.calleridrep.com) -----
+мая 18 03:00:24 eduard-HKD-WXX chromium_chromium.desktop[6633]: ERROR: Time is after notAfter
+мая 18 03:00:24 eduard-HKD-WXX chromium_chromium.desktop[6758]: [6758:6762:0518/030024.536182:ERROR:ssl_client_socket_impl.cc(999)] handshake failed; returned -1, SSL error code 1, net_error -201
+мая 18 03:00:24 eduard-HKD-WXX chromium_chromium.desktop[6758]: [6758:6762:0518/030024.637808:ERROR:ssl_client_socket_impl.cc(999)] handshake failed; returned -1, SSL error code 1, net_error -201
+мая 18 03:00:43 eduard-HKD-WXX charon[79348]: 13[IKE] sending keep alive to 98.103.101.206[4500]
+мая 18 03:00:53 eduard-HKD-WXX charon[79348]: 12[KNL] interface vethbd853fc activated
+мая 18 03:00:53 eduard-HKD-WXX NetworkManager[897]: <info>  [1652817653.2742] manager: (vetha8b7798): new Veth device (/org/freedesktop/NetworkManager/Devices/2000)
+мая 18 03:00:53 eduard-HKD-WXX kernel: docker0: port 1(vethbd853fc) entered blocking state
+мая 18 03:00:53 eduard-HKD-WXX kernel: docker0: port 1(vethbd853fc) entered disabled state
+мая 18 03:00:53 eduard-HKD-WXX kernel: device vethbd853fc entered promiscuous mode
+мая 18 03:00:53 eduard-HKD-WXX systemd-udevd[155168]: ethtool: autonegotiation is unset or enabled, the speed and duplex are not writable.
+мая 18 03:00:53 eduard-HKD-WXX systemd-udevd[155169]: ethtool: autonegotiation is unset or enabled, the speed and duplex are not writable.
+мая 18 03:00:53 eduard-HKD-WXX NetworkManager[897]: <info>  [1652817653.2764] manager: (vethbd853fc): new Veth device (/org/freedesktop/NetworkManager/Devices/2001)
+мая 18 03:00:53 eduard-HKD-WXX systemd-udevd[155169]: Using default interface naming scheme 'v245'.
+мая 18 03:00:53 eduard-HKD-WXX systemd-udevd[155168]: Using default interface naming scheme 'v245'.
+мая 18 03:00:53 eduard-HKD-WXX systemd-udevd[155169]: [0;1;38;5;185m[0;1;39m[0;1;38;5;185mvethbd853fc: Could not generate persistent MAC: No data available[0m
+мая 18 03:00:53 eduard-HKD-WXX systemd-udevd[155168]: [0;1;38;5;185m[0;1;39m[0;1;38;5;185mvetha8b7798: Could not generate persistent MAC: No data available[0m
+мая 18 03:00:53 eduard-HKD-WXX docker.dockerd[2481]: time="2022-05-18T03:00:53.446528789+07:00" level=info msg="starting signal loop" namespace=moby path=/run/snap.docker/containerd/daemon/io.containerd.runtime.v2.task/moby/1af9ea357ebc69e8ba538e44157f4805ea265292733e10ccdcb183e34abe3294 pid=155183
+мая 18 03:00:53 eduard-HKD-WXX charon[79348]: 13[KNL] interface vetha8b7798 deleted
+мая 18 03:00:53 eduard-HKD-WXX kernel: eth0: renamed from vetha8b7798
+мая 18 03:00:53 eduard-HKD-WXX NetworkManager[897]: <info>  [1652817653.7864] device (vethbd853fc): carrier: link connected
+мая 18 03:00:53 eduard-HKD-WXX kernel: IPv6: ADDRCONF(NETDEV_CHANGE): vethbd853fc: link becomes ready
+мая 18 03:00:53 eduard-HKD-WXX kernel: docker0: port 1(vethbd853fc) entered blocking state
+мая 18 03:00:53 eduard-HKD-WXX kernel: docker0: port 1(vethbd853fc) entered forwarding state
+мая 18 03:00:53 eduard-HKD-WXX kernel: IPv6: ADDRCONF(NETDEV_CHANGE): docker0: link becomes ready
+мая 18 03:00:53 eduard-HKD-WXX gnome-shell[2641]: [0;1;39m[0;1;31m[0;1;39mRemoving a network device that was not added[0m
+мая 18 03:00:53 eduard-HKD-WXX NetworkManager[897]: <info>  [1652817653.7906] device (docker0): carrier: link connected
+мая 18 03:00:54 eduard-HKD-WXX charon[79348]: 07[KNL] fe80::74ba:67ff:fe8a:1e1a appeared on vethbd853fc
+мая 18 03:00:54 eduard-HKD-WXX avahi-daemon[888]: Joining mDNS multicast group on interface vethbd853fc.IPv6 with address fe80::74ba:67ff:fe8a:1e1a.
+мая 18 03:00:54 eduard-HKD-WXX avahi-daemon[888]: New relevant interface vethbd853fc.IPv6 for mDNS.
+мая 18 03:00:54 eduard-HKD-WXX avahi-daemon[888]: Registering new address record for fe80::74ba:67ff:fe8a:1e1a on vethbd853fc.*.
+мая 18 03:00:55 eduard-HKD-WXX charon[79348]: 09[KNL] fe80::42:dfff:fec4:f058 appeared on docker0
+мая 18 03:00:55 eduard-HKD-WXX avahi-daemon[888]: Joining mDNS multicast group on interface docker0.IPv6 with address fe80::42:dfff:fec4:f058.
+мая 18 03:00:55 eduard-HKD-WXX avahi-daemon[888]: New relevant interface docker0.IPv6 for mDNS.
+мая 18 03:00:55 eduard-HKD-WXX avahi-daemon[888]: Registering new address record for fe80::42:dfff:fec4:f058 on docker0.*.
+мая 18 03:00:57 eduard-HKD-WXX kernel: docker0: port 1(vethbd853fc) entered disabled state
+мая 18 03:00:57 eduard-HKD-WXX kernel: vetha8b7798: renamed from eth0
+мая 18 03:00:57 eduard-HKD-WXX charon[79348]: 13[KNL] interface vethbd853fc deactivated
+мая 18 03:00:57 eduard-HKD-WXX avahi-daemon[888]: Interface vethbd853fc.IPv6 no longer relevant for mDNS.
+мая 18 03:00:57 eduard-HKD-WXX avahi-daemon[888]: Leaving mDNS multicast group on interface vethbd853fc.IPv6 with address fe80::74ba:67ff:fe8a:1e1a.
+мая 18 03:00:57 eduard-HKD-WXX kernel: docker0: port 1(vethbd853fc) entered disabled state
+мая 18 03:00:57 eduard-HKD-WXX kernel: device vethbd853fc left promiscuous mode
+мая 18 03:00:57 eduard-HKD-WXX kernel: docker0: port 1(vethbd853fc) entered disabled state
+мая 18 03:00:57 eduard-HKD-WXX charon[79348]: 09[KNL] fe80::74ba:67ff:fe8a:1e1a disappeared from vethbd853fc
+мая 18 03:00:57 eduard-HKD-WXX charon[79348]: 11[KNL] interface vetha8b7798 deleted
+мая 18 03:00:57 eduard-HKD-WXX charon[79348]: 12[KNL] interface vethbd853fc deleted
+мая 18 03:00:57 eduard-HKD-WXX avahi-daemon[888]: Withdrawing address record for fe80::74ba:67ff:fe8a:1e1a on vethbd853fc.
+мая 18 03:00:57 eduard-HKD-WXX NetworkManager[897]: <info>  [1652817657.3482] device (vetha8b7798): driver '(null)' does not support carrier detection.
+мая 18 03:00:57 eduard-HKD-WXX NetworkManager[897]: <info>  [1652817657.3484] device (vetha8b7798): driver 'veth' does not support carrier detection.
+мая 18 03:00:57 eduard-HKD-WXX NetworkManager[897]: <info>  [1652817657.3492] manager: (vetha8b7798): new Veth device (/org/freedesktop/NetworkManager/Devices/2002)
+мая 18 03:00:57 eduard-HKD-WXX systemd-udevd[155169]: [0;1;31m[0;1;39m[0;1;31mvetha8b7798: Failed to get link config: No such device[0m
+мая 18 03:00:57 eduard-HKD-WXX NetworkManager[897]: <info>  [1652817657.3553] device (vethbd853fc): released from master device docker0
+мая 18 03:00:57 eduard-HKD-WXX gnome-shell[2641]: [0;1;39m[0;1;31m[0;1;39mRemoving a network device that was not added[0m
+мая 18 03:00:57 eduard-HKD-WXX gnome-shell[2641]: [0;1;39m[0;1;31m[0;1;39mRemoving a network device that was not added[0m
+мая 18 03:00:57 eduard-HKD-WXX systemd-udevd[155169]: [0;1;31m[0;1;39m[0;1;31mvetha8b7798: Failed to get link config: No such device[0m
+мая 18 03:00:57 eduard-HKD-WXX charon[79348]: 16[KNL] interface veth08a79e6 activated
+мая 18 03:00:57 eduard-HKD-WXX systemd-udevd[155169]: ethtool: autonegotiation is unset or enabled, the speed and duplex are not writable.
+мая 18 03:00:57 eduard-HKD-WXX systemd-udevd[155169]: [0;1;38;5;185m[0;1;39m[0;1;38;5;185mveth03dddd9: Could not generate persistent MAC: No data available[0m
+мая 18 03:00:57 eduard-HKD-WXX systemd-udevd[155176]: ethtool: autonegotiation is unset or enabled, the speed and duplex are not writable.
+мая 18 03:00:57 eduard-HKD-WXX NetworkManager[897]: <info>  [1652817657.4765] manager: (veth03dddd9): new Veth device (/org/freedesktop/NetworkManager/Devices/2003)
+мая 18 03:00:57 eduard-HKD-WXX systemd-udevd[155176]: Using default interface naming scheme 'v245'.
+мая 18 03:00:57 eduard-HKD-WXX systemd-udevd[155176]: [0;1;38;5;185m[0;1;39m[0;1;38;5;185mveth08a79e6: Could not generate persistent MAC: No data available[0m
+мая 18 03:00:57 eduard-HKD-WXX NetworkManager[897]: <info>  [1652817657.4774] manager: (veth08a79e6): new Veth device (/org/freedesktop/NetworkManager/Devices/2004)
+мая 18 03:00:57 eduard-HKD-WXX kernel: docker0: port 1(veth08a79e6) entered blocking state
+мая 18 03:00:57 eduard-HKD-WXX kernel: docker0: port 1(veth08a79e6) entered disabled state
+мая 18 03:00:57 eduard-HKD-WXX kernel: device veth08a79e6 entered promiscuous mode
+мая 18 03:00:57 eduard-HKD-WXX kernel: docker0: port 1(veth08a79e6) entered blocking state
+мая 18 03:00:57 eduard-HKD-WXX kernel: docker0: port 1(veth08a79e6) entered forwarding state
+мая 18 03:00:57 eduard-HKD-WXX docker.dockerd[2481]: time="2022-05-18T03:00:57.489674083+07:00" level=info msg="starting signal loop" namespace=moby path=/run/snap.docker/containerd/daemon/io.containerd.runtime.v2.task/moby/06dbad2dc7a7395dc3e66e791bef73724918689a10e02311ba327bbb617dbeae pid=157479
+мая 18 03:00:57 eduard-HKD-WXX charon[79348]: 14[KNL] interface veth03dddd9 deleted
+мая 18 03:00:57 eduard-HKD-WXX kernel: eth0: renamed from veth03dddd9
+мая 18 03:00:57 eduard-HKD-WXX NetworkManager[897]: <info>  [1652817657.6626] device (veth08a79e6): carrier: link connected
+мая 18 03:00:57 eduard-HKD-WXX NetworkManager[897]: <info>  [1652817657.6633] device (docker0): carrier: link connected
+мая 18 03:00:57 eduard-HKD-WXX kernel: IPv6: ADDRCONF(NETDEV_CHANGE): veth08a79e6: link becomes ready
+мая 18 03:00:57 eduard-HKD-WXX gnome-shell[2641]: [0;1;39m[0;1;31m[0;1;39mRemoving a network device that was not added[0m
+мая 18 03:00:58 eduard-HKD-WXX charon[79348]: 06[KNL] fe80::842e:49ff:fe1c:387b appeared on veth08a79e6
+мая 18 03:00:58 eduard-HKD-WXX avahi-daemon[888]: Joining mDNS multicast group on interface veth08a79e6.IPv6 with address fe80::842e:49ff:fe1c:387b.
+мая 18 03:00:58 eduard-HKD-WXX avahi-daemon[888]: New relevant interface veth08a79e6.IPv6 for mDNS.
+мая 18 03:00:58 eduard-HKD-WXX avahi-daemon[888]: Registering new address record for fe80::842e:49ff:fe1c:387b on veth08a79e6.*.
+мая 18 03:01:06 eduard-HKD-WXX NetworkManager[897]: <info>  [1652817666.0411] manager: (vethf2c8b94): new Veth device (/org/freedesktop/NetworkManager/Devices/2005)
+мая 18 03:01:06 eduard-HKD-WXX charon[79348]: 12[KNL] interface vethec90706 activated
+мая 18 03:01:06 eduard-HKD-WXX systemd-udevd[157542]: ethtool: autonegotiation is unset or enabled, the speed and duplex are not writable.
+мая 18 03:01:06 eduard-HKD-WXX kernel: br-5b085080a970: port 2(vethec90706) entered blocking state
+мая 18 03:01:06 eduard-HKD-WXX kernel: br-5b085080a970: port 2(vethec90706) entered disabled state
+мая 18 03:01:06 eduard-HKD-WXX kernel: device vethec90706 entered promiscuous mode
+мая 18 03:01:06 eduard-HKD-WXX NetworkManager[897]: <info>  [1652817666.0437] manager: (vethec90706): new Veth device (/org/freedesktop/NetworkManager/Devices/2006)
+мая 18 03:01:06 eduard-HKD-WXX systemd-udevd[157543]: ethtool: autonegotiation is unset or enabled, the speed and duplex are not writable.
+мая 18 03:01:06 eduard-HKD-WXX systemd-udevd[157542]: Using default interface naming scheme 'v245'.
+мая 18 03:01:06 eduard-HKD-WXX systemd-udevd[157542]: [0;1;38;5;185m[0;1;39m[0;1;38;5;185mvethf2c8b94: Could not generate persistent MAC: No data available[0m
+мая 18 03:01:06 eduard-HKD-WXX systemd-udevd[157543]: Using default interface naming scheme 'v245'.
+мая 18 03:01:06 eduard-HKD-WXX systemd-udevd[157543]: [0;1;38;5;185m[0;1;39m[0;1;38;5;185mvethec90706: Could not generate persistent MAC: No data available[0m
+мая 18 03:01:06 eduard-HKD-WXX docker.dockerd[2481]: time="2022-05-18T03:01:06.114333315+07:00" level=info msg="starting signal loop" namespace=moby path=/run/snap.docker/containerd/daemon/io.containerd.runtime.v2.task/moby/eeb5b75607f7fafcff8cf8fbdbd2b7014983ab6eba91cfa53e6b0361859e731b pid=157579
+мая 18 03:01:06 eduard-HKD-WXX charon[79348]: 14[KNL] interface vethf2c8b94 deleted
+мая 18 03:01:06 eduard-HKD-WXX kernel: eth0: renamed from vethf2c8b94
+мая 18 03:01:06 eduard-HKD-WXX NetworkManager[897]: <info>  [1652817666.3143] device (vethec90706): carrier: link connected
+мая 18 03:01:06 eduard-HKD-WXX kernel: IPv6: ADDRCONF(NETDEV_CHANGE): vethec90706: link becomes ready
+мая 18 03:01:06 eduard-HKD-WXX kernel: br-5b085080a970: port 2(vethec90706) entered blocking state
+мая 18 03:01:06 eduard-HKD-WXX kernel: br-5b085080a970: port 2(vethec90706) entered forwarding state
+мая 18 03:01:06 eduard-HKD-WXX gnome-shell[2641]: [0;1;39m[0;1;31m[0;1;39mRemoving a network device that was not added[0m
+мая 18 03:01:06 eduard-HKD-WXX kernel: br-5b085080a970: port 2(vethec90706) entered disabled state
+мая 18 03:01:06 eduard-HKD-WXX kernel: vethf2c8b94: renamed from eth0
+мая 18 03:01:06 eduard-HKD-WXX charon[79348]: 07[KNL] interface vethec90706 deactivated
+мая 18 03:01:06 eduard-HKD-WXX charon[79348]: 10[KNL] interface vethf2c8b94 deleted
+мая 18 03:01:06 eduard-HKD-WXX kernel: br-5b085080a970: port 2(vethec90706) entered disabled state
+мая 18 03:01:06 eduard-HKD-WXX kernel: device vethec90706 left promiscuous mode
+мая 18 03:01:06 eduard-HKD-WXX kernel: br-5b085080a970: port 2(vethec90706) entered disabled state
+мая 18 03:01:06 eduard-HKD-WXX charon[79348]: 12[KNL] interface vethec90706 deleted
+мая 18 03:01:06 eduard-HKD-WXX systemd-udevd[157542]: [0;1;31m[0;1;39m[0;1;31mvethf2c8b94: Failed to get link config: No such device[0m
+мая 18 03:01:06 eduard-HKD-WXX NetworkManager[897]: <info>  [1652817666.5482] device (vethf2c8b94): driver '(null)' does not support carrier detection.
+мая 18 03:01:06 eduard-HKD-WXX NetworkManager[897]: <info>  [1652817666.5485] device (vethf2c8b94): driver 'veth' does not support carrier detection.
+мая 18 03:01:06 eduard-HKD-WXX NetworkManager[897]: <info>  [1652817666.5492] manager: (vethf2c8b94): new Veth device (/org/freedesktop/NetworkManager/Devices/2007)
+мая 18 03:01:06 eduard-HKD-WXX NetworkManager[897]: <info>  [1652817666.5556] device (vethec90706): released from master device br-5b085080a970
+мая 18 03:01:06 eduard-HKD-WXX gnome-shell[2641]: [0;1;39m[0;1;31m[0;1;39mRemoving a network device that was not added[0m
+мая 18 03:01:06 eduard-HKD-WXX gnome-shell[2641]: [0;1;39m[0;1;31m[0;1;39mRemoving a network device that was not added[0m
+мая 18 03:01:06 eduard-HKD-WXX systemd-udevd[157542]: [0;1;31m[0;1;39m[0;1;31mvethf2c8b94: Failed to get link config: No such device[0m
+мая 18 03:01:07 eduard-HKD-WXX kernel: docker0: port 1(veth08a79e6) entered disabled state
+мая 18 03:01:07 eduard-HKD-WXX kernel: veth03dddd9: renamed from eth0
+мая 18 03:01:07 eduard-HKD-WXX charon[79348]: 08[KNL] interface veth08a79e6 deactivated
+мая 18 03:01:07 eduard-HKD-WXX avahi-daemon[888]: Interface veth08a79e6.IPv6 no longer relevant for mDNS.
+мая 18 03:01:07 eduard-HKD-WXX NetworkManager[897]: <info>  [1652817667.5849] device (veth03dddd9): driver '(null)' does not support carrier detection.
+мая 18 03:01:07 eduard-HKD-WXX avahi-daemon[888]: Leaving mDNS multicast group on interface veth08a79e6.IPv6 with address fe80::842e:49ff:fe1c:387b.
+мая 18 03:01:07 eduard-HKD-WXX NetworkManager[897]: <info>  [1652817667.5850] device (veth03dddd9): driver 'veth' does not support carrier detection.
+мая 18 03:01:07 eduard-HKD-WXX charon[79348]: 16[KNL] fe80::842e:49ff:fe1c:387b disappeared from veth08a79e6
+мая 18 03:01:07 eduard-HKD-WXX NetworkManager[897]: <info>  [1652817667.5853] manager: (veth03dddd9): new Veth device (/org/freedesktop/NetworkManager/Devices/2008)
+мая 18 03:01:07 eduard-HKD-WXX charon[79348]: 11[KNL] interface veth03dddd9 deleted
+мая 18 03:01:07 eduard-HKD-WXX charon[79348]: 15[KNL] interface veth08a79e6 deleted
+мая 18 03:01:07 eduard-HKD-WXX kernel: docker0: port 1(veth08a79e6) entered disabled state
+мая 18 03:01:07 eduard-HKD-WXX kernel: device veth08a79e6 left promiscuous mode
+мая 18 03:01:07 eduard-HKD-WXX kernel: docker0: port 1(veth08a79e6) entered disabled state
+мая 18 03:01:07 eduard-HKD-WXX systemd-udevd[157542]: ethtool: autonegotiation is unset or enabled, the speed and duplex are not writable.
+мая 18 03:01:07 eduard-HKD-WXX avahi-daemon[888]: Withdrawing address record for fe80::842e:49ff:fe1c:387b on veth08a79e6.
+мая 18 03:01:07 eduard-HKD-WXX NetworkManager[897]: <info>  [1652817667.6222] device (veth08a79e6): released from master device docker0
+мая 18 03:01:07 eduard-HKD-WXX systemd-udevd[157542]: [0;1;38;5;185m[0;1;39m[0;1;38;5;185methtool: could not get ethtool features for veth03dddd9[0m
+мая 18 03:01:07 eduard-HKD-WXX systemd-udevd[157542]: [0;1;38;5;185m[0;1;39m[0;1;38;5;185mCould not set offload features of veth03dddd9: No such device[0m
+мая 18 03:01:07 eduard-HKD-WXX gnome-shell[2641]: [0;1;39m[0;1;31m[0;1;39mRemoving a network device that was not added[0m
+мая 18 03:01:07 eduard-HKD-WXX gnome-shell[2641]: [0;1;39m[0;1;31m[0;1;39mRemoving a network device that was not added[0m
+мая 18 03:01:07 eduard-HKD-WXX systemd-udevd[157542]: [0;1;31m[0;1;39m[0;1;31mveth03dddd9: Failed to get link config: No such device[0m
+мая 18 03:01:24 eduard-HKD-WXX chromium_chromium.desktop[6758]: [6758:6762:0518/030124.368913:ERROR:ssl_client_socket_impl.cc(999)] handshake failed; returned -1, SSL error code 1, net_error -201
+мая 18 03:01:44 eduard-HKD-WXX charon[79348]: 11[IKE] sending keep alive to 98.103.101.206[4500]
+мая 18 03:01:48 eduard-HKD-WXX NetworkManager[897]: <info>  [1652817708.9536] dhcp6 (wlp0s20f3): option dhcp6_domain_search  => 'Dlink'
+мая 18 03:01:48 eduard-HKD-WXX NetworkManager[897]: <info>  [1652817708.9536] dhcp6 (wlp0s20f3): option dhcp6_name_servers   => 'fe80::2ad:24ff:fee6:4f40'
+мая 18 03:01:48 eduard-HKD-WXX NetworkManager[897]: <info>  [1652817708.9536] dhcp6 (wlp0s20f3): option ip6_address          => 'fd01::4023:e039:1dfa:ff2b'
+мая 18 03:01:48 eduard-HKD-WXX dbus-daemon[895]: [system] Activating via systemd: service name='org.freedesktop.nm_dispatcher' unit='dbus-org.freedesktop.nm-dispatcher.service' requested by ':1.13' (uid=0 pid=897 comm="/usr/sbin/NetworkManager --no-daemon " label="unconfined")
+мая 18 03:01:48 eduard-HKD-WXX NetworkManager[897]: <info>  [1652817708.9536] dhcp6 (wlp0s20f3): state changed bound -> bound
+мая 18 03:01:48 eduard-HKD-WXX systemd[1]: Starting Network Manager Script Dispatcher Service...
+-- Subject: Начинается запуск юнита NetworkManager-dispatcher.service
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- Начат процесс запуска юнита NetworkManager-dispatcher.service.
+мая 18 03:01:48 eduard-HKD-WXX dbus-daemon[895]: [system] Successfully activated service 'org.freedesktop.nm_dispatcher'
+мая 18 03:01:48 eduard-HKD-WXX systemd[1]: Started Network Manager Script Dispatcher Service.
+-- Subject: Запуск юнита NetworkManager-dispatcher.service завершен
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- Процесс запуска юнита NetworkManager-dispatcher.service был завершен.
+-- 
+-- Результат: done.
+мая 18 03:01:58 eduard-HKD-WXX systemd[1]: NetworkManager-dispatcher.service: Succeeded.
+-- Subject: Unit succeeded
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- The unit NetworkManager-dispatcher.service has successfully entered the 'dead' state.
+мая 18 03:02:04 eduard-HKD-WXX charon[79348]: 08[IKE] sending keep alive to 98.103.101.206[4500]
+мая 18 03:02:06 eduard-HKD-WXX charon[79348]: 12[KNL] interface veth1c020d6 activated
+мая 18 03:02:06 eduard-HKD-WXX kernel: br-5b085080a970: port 2(veth1c020d6) entered blocking state
+мая 18 03:02:06 eduard-HKD-WXX kernel: br-5b085080a970: port 2(veth1c020d6) entered disabled state
+мая 18 03:02:06 eduard-HKD-WXX kernel: device veth1c020d6 entered promiscuous mode
+мая 18 03:02:06 eduard-HKD-WXX systemd-udevd[157959]: ethtool: autonegotiation is unset or enabled, the speed and duplex are not writable.
+мая 18 03:02:06 eduard-HKD-WXX systemd-udevd[157960]: ethtool: autonegotiation is unset or enabled, the speed and duplex are not writable.
+мая 18 03:02:06 eduard-HKD-WXX systemd-udevd[157959]: Using default interface naming scheme 'v245'.
+мая 18 03:02:06 eduard-HKD-WXX systemd-udevd[157959]: [0;1;38;5;185m[0;1;39m[0;1;38;5;185mveth4918208: Could not generate persistent MAC: No data available[0m
+мая 18 03:02:06 eduard-HKD-WXX NetworkManager[897]: <info>  [1652817726.4446] manager: (veth4918208): new Veth device (/org/freedesktop/NetworkManager/Devices/2009)
+мая 18 03:02:06 eduard-HKD-WXX systemd-udevd[157960]: Using default interface naming scheme 'v245'.
+мая 18 03:02:06 eduard-HKD-WXX systemd-udevd[157960]: [0;1;38;5;185m[0;1;39m[0;1;38;5;185mveth1c020d6: Could not generate persistent MAC: No data available[0m
+мая 18 03:02:06 eduard-HKD-WXX NetworkManager[897]: <info>  [1652817726.4453] manager: (veth1c020d6): new Veth device (/org/freedesktop/NetworkManager/Devices/2010)
+мая 18 03:02:06 eduard-HKD-WXX docker.dockerd[2481]: time="2022-05-18T03:02:06.700366619+07:00" level=info msg="starting signal loop" namespace=moby path=/run/snap.docker/containerd/daemon/io.containerd.runtime.v2.task/moby/eeb5b75607f7fafcff8cf8fbdbd2b7014983ab6eba91cfa53e6b0361859e731b pid=157992
+мая 18 03:02:07 eduard-HKD-WXX charon[79348]: 07[KNL] interface veth4918208 deleted
+мая 18 03:02:07 eduard-HKD-WXX gnome-shell[2641]: [0;1;39m[0;1;31m[0;1;39mRemoving a network device that was not added[0m
+мая 18 03:02:07 eduard-HKD-WXX kernel: eth0: renamed from veth4918208
+мая 18 03:02:07 eduard-HKD-WXX NetworkManager[897]: <info>  [1652817727.1984] device (veth1c020d6): carrier: link connected
+мая 18 03:02:07 eduard-HKD-WXX kernel: IPv6: ADDRCONF(NETDEV_CHANGE): veth1c020d6: link becomes ready
+мая 18 03:02:07 eduard-HKD-WXX kernel: br-5b085080a970: port 2(veth1c020d6) entered blocking state
+мая 18 03:02:07 eduard-HKD-WXX kernel: br-5b085080a970: port 2(veth1c020d6) entered forwarding state
+мая 18 03:02:07 eduard-HKD-WXX kernel: br-5b085080a970: port 2(veth1c020d6) entered disabled state
+мая 18 03:02:07 eduard-HKD-WXX kernel: veth4918208: renamed from eth0
+мая 18 03:02:07 eduard-HKD-WXX NetworkManager[897]: <info>  [1652817727.7202] manager: (veth4918208): new Veth device (/org/freedesktop/NetworkManager/Devices/2011)
+мая 18 03:02:07 eduard-HKD-WXX systemd-udevd[157959]: ethtool: autonegotiation is unset or enabled, the speed and duplex are not writable.
+мая 18 03:02:07 eduard-HKD-WXX charon[79348]: 15[KNL] interface veth1c020d6 deactivated
+мая 18 03:02:07 eduard-HKD-WXX charon[79348]: 09[KNL] interface veth4918208 deleted
+мая 18 03:02:07 eduard-HKD-WXX charon[79348]: 12[KNL] interface veth1c020d6 deleted
+мая 18 03:02:07 eduard-HKD-WXX kernel: br-5b085080a970: port 2(veth1c020d6) entered disabled state
+мая 18 03:02:07 eduard-HKD-WXX kernel: device veth1c020d6 left promiscuous mode
+мая 18 03:02:07 eduard-HKD-WXX kernel: br-5b085080a970: port 2(veth1c020d6) entered disabled state
+мая 18 03:02:07 eduard-HKD-WXX systemd-udevd[157959]: [0;1;31m[0;1;39m[0;1;31mveth4918208: Failed to get link config: No such device[0m
+мая 18 03:02:07 eduard-HKD-WXX NetworkManager[897]: <info>  [1652817727.7599] device (veth1c020d6): released from master device br-5b085080a970
+мая 18 03:02:07 eduard-HKD-WXX gnome-shell[2641]: [0;1;39m[0;1;31m[0;1;39mRemoving a network device that was not added[0m
+мая 18 03:02:07 eduard-HKD-WXX gnome-shell[2641]: [0;1;39m[0;1;31m[0;1;39mRemoving a network device that was not added[0m
+мая 18 03:02:43 eduard-HKD-WXX charon[79348]: 10[KNL] interface vethf6d0587 activated
+мая 18 03:02:43 eduard-HKD-WXX kernel: br-13a30f52d39d: port 1(vethf6d0587) entered blocking state
+мая 18 03:02:43 eduard-HKD-WXX kernel: br-13a30f52d39d: port 1(vethf6d0587) entered disabled state
+мая 18 03:02:43 eduard-HKD-WXX kernel: device vethf6d0587 entered promiscuous mode
+мая 18 03:02:43 eduard-HKD-WXX NetworkManager[897]: <info>  [1652817763.6152] manager: (veth4f31b0b): new Veth device (/org/freedesktop/NetworkManager/Devices/2012)
+мая 18 03:02:43 eduard-HKD-WXX NetworkManager[897]: <info>  [1652817763.6159] manager: (vethf6d0587): new Veth device (/org/freedesktop/NetworkManager/Devices/2013)
+мая 18 03:02:43 eduard-HKD-WXX systemd-udevd[158594]: ethtool: autonegotiation is unset or enabled, the speed and duplex are not writable.
+мая 18 03:02:43 eduard-HKD-WXX systemd-udevd[158593]: ethtool: autonegotiation is unset or enabled, the speed and duplex are not writable.
+мая 18 03:02:43 eduard-HKD-WXX systemd-udevd[158594]: Using default interface naming scheme 'v245'.
+мая 18 03:02:43 eduard-HKD-WXX systemd-udevd[158594]: [0;1;38;5;185m[0;1;39m[0;1;38;5;185mvethf6d0587: Could not generate persistent MAC: No data available[0m
+мая 18 03:02:43 eduard-HKD-WXX systemd-udevd[158593]: Using default interface naming scheme 'v245'.
+мая 18 03:02:43 eduard-HKD-WXX systemd-udevd[158593]: [0;1;38;5;185m[0;1;39m[0;1;38;5;185mveth4f31b0b: Could not generate persistent MAC: No data available[0m
+мая 18 03:02:43 eduard-HKD-WXX systemd-udevd[158599]: ethtool: autonegotiation is unset or enabled, the speed and duplex are not writable.
+мая 18 03:02:43 eduard-HKD-WXX charon[79348]: 07[KNL] interface vethd9c8759 activated
+мая 18 03:02:43 eduard-HKD-WXX systemd-udevd[158594]: ethtool: autonegotiation is unset or enabled, the speed and duplex are not writable.
+мая 18 03:02:43 eduard-HKD-WXX systemd-udevd[158594]: [0;1;38;5;185m[0;1;39m[0;1;38;5;185mvethd9c8759: Could not generate persistent MAC: No data available[0m
+мая 18 03:02:43 eduard-HKD-WXX NetworkManager[897]: <info>  [1652817763.6699] manager: (vethfec0297): new Veth device (/org/freedesktop/NetworkManager/Devices/2014)
+мая 18 03:02:43 eduard-HKD-WXX systemd-udevd[158599]: Using default interface naming scheme 'v245'.
+мая 18 03:02:43 eduard-HKD-WXX kernel: br-13a30f52d39d: port 2(vethd9c8759) entered blocking state
+мая 18 03:02:43 eduard-HKD-WXX kernel: br-13a30f52d39d: port 2(vethd9c8759) entered disabled state
+мая 18 03:02:43 eduard-HKD-WXX kernel: device vethd9c8759 entered promiscuous mode
+мая 18 03:02:43 eduard-HKD-WXX kernel: br-13a30f52d39d: port 2(vethd9c8759) entered blocking state
+мая 18 03:02:43 eduard-HKD-WXX kernel: br-13a30f52d39d: port 2(vethd9c8759) entered forwarding state
+мая 18 03:02:43 eduard-HKD-WXX kernel: br-13a30f52d39d: port 2(vethd9c8759) entered disabled state
+мая 18 03:02:43 eduard-HKD-WXX systemd-udevd[158599]: [0;1;38;5;185m[0;1;39m[0;1;38;5;185mvethfec0297: Could not generate persistent MAC: No data available[0m
+мая 18 03:02:43 eduard-HKD-WXX NetworkManager[897]: <info>  [1652817763.6721] manager: (vethd9c8759): new Veth device (/org/freedesktop/NetworkManager/Devices/2015)
+мая 18 03:02:43 eduard-HKD-WXX docker.dockerd[2481]: time="2022-05-18T03:02:43.689869833+07:00" level=info msg="starting signal loop" namespace=moby path=/run/snap.docker/containerd/daemon/io.containerd.runtime.v2.task/moby/bdab414263170537f0bc066ad377fb9e4acb5ddafc6b5d99af2e642609dd08f5 pid=158613
+мая 18 03:02:43 eduard-HKD-WXX NetworkManager[897]: <info>  [1652817763.7219] manager: (veth6806f14): new Veth device (/org/freedesktop/NetworkManager/Devices/2016)
+мая 18 03:02:43 eduard-HKD-WXX systemd-udevd[158599]: ethtool: autonegotiation is unset or enabled, the speed and duplex are not writable.
+мая 18 03:02:43 eduard-HKD-WXX systemd-udevd[158599]: [0;1;38;5;185m[0;1;39m[0;1;38;5;185mveth6806f14: Could not generate persistent MAC: No data available[0m
+мая 18 03:02:43 eduard-HKD-WXX kernel: br-13a30f52d39d: port 3(veth40485a2) entered blocking state
+мая 18 03:02:43 eduard-HKD-WXX kernel: br-13a30f52d39d: port 3(veth40485a2) entered disabled state
+мая 18 03:02:43 eduard-HKD-WXX kernel: device veth40485a2 entered promiscuous mode
+мая 18 03:02:43 eduard-HKD-WXX kernel: br-13a30f52d39d: port 3(veth40485a2) entered blocking state
+мая 18 03:02:43 eduard-HKD-WXX kernel: br-13a30f52d39d: port 3(veth40485a2) entered forwarding state
+мая 18 03:02:43 eduard-HKD-WXX kernel: IPv6: ADDRCONF(NETDEV_CHANGE): br-13a30f52d39d: link becomes ready
+мая 18 03:02:43 eduard-HKD-WXX charon[79348]: 08[KNL] interface veth40485a2 activated
+мая 18 03:02:43 eduard-HKD-WXX systemd-udevd[158600]: ethtool: autonegotiation is unset or enabled, the speed and duplex are not writable.
+мая 18 03:02:43 eduard-HKD-WXX systemd-udevd[158594]: ethtool: autonegotiation is unset or enabled, the speed and duplex are not writable.
+мая 18 03:02:43 eduard-HKD-WXX systemd-udevd[158594]: [0;1;38;5;185m[0;1;39m[0;1;38;5;185mveth40485a2: Could not generate persistent MAC: No data available[0m
+мая 18 03:02:43 eduard-HKD-WXX systemd-udevd[158593]: ethtool: autonegotiation is unset or enabled, the speed and duplex are not writable.
+мая 18 03:02:43 eduard-HKD-WXX systemd-udevd[158593]: [0;1;38;5;185m[0;1;39m[0;1;38;5;185mveth4f6d04a: Could not generate persistent MAC: No data available[0m
+мая 18 03:02:43 eduard-HKD-WXX kernel: br-13a30f52d39d: port 3(veth40485a2) entered disabled state
+мая 18 03:02:43 eduard-HKD-WXX kernel: br-13a30f52d39d: port 4(veth4f6d04a) entered blocking state
+мая 18 03:02:43 eduard-HKD-WXX kernel: br-13a30f52d39d: port 4(veth4f6d04a) entered disabled state
+мая 18 03:02:43 eduard-HKD-WXX kernel: device veth4f6d04a entered promiscuous mode
+мая 18 03:02:43 eduard-HKD-WXX kernel: br-13a30f52d39d: port 4(veth4f6d04a) entered blocking state
+мая 18 03:02:43 eduard-HKD-WXX kernel: br-13a30f52d39d: port 4(veth4f6d04a) entered forwarding state
+мая 18 03:02:43 eduard-HKD-WXX charon[79348]: 14[KNL] interface veth4f6d04a activated
+мая 18 03:02:43 eduard-HKD-WXX NetworkManager[897]: <info>  [1652817763.7267] manager: (veth40485a2): new Veth device (/org/freedesktop/NetworkManager/Devices/2017)
+мая 18 03:02:43 eduard-HKD-WXX systemd-udevd[158600]: Using default interface naming scheme 'v245'.
+мая 18 03:02:43 eduard-HKD-WXX systemd-udevd[158600]: [0;1;38;5;185m[0;1;39m[0;1;38;5;185mvethbbedcae: Could not generate persistent MAC: No data available[0m
+мая 18 03:02:43 eduard-HKD-WXX NetworkManager[897]: <info>  [1652817763.7326] manager: (vethbbedcae): new Veth device (/org/freedesktop/NetworkManager/Devices/2018)
+мая 18 03:02:43 eduard-HKD-WXX NetworkManager[897]: <info>  [1652817763.7333] manager: (veth4f6d04a): new Veth device (/org/freedesktop/NetworkManager/Devices/2019)
+мая 18 03:02:43 eduard-HKD-WXX docker.dockerd[2481]: time="2022-05-18T03:02:43.787496699+07:00" level=info msg="starting signal loop" namespace=moby path=/run/snap.docker/containerd/daemon/io.containerd.runtime.v2.task/moby/85de22ab281721eb693897c3bf3489a65596ddce2048ac33f22cec88afed4f32 pid=158693
+мая 18 03:02:43 eduard-HKD-WXX docker.dockerd[2481]: time="2022-05-18T03:02:43.787388094+07:00" level=info msg="starting signal loop" namespace=moby path=/run/snap.docker/containerd/daemon/io.containerd.runtime.v2.task/moby/2f7851bf5e720f319f3781572a0529f69a9de111a5e6e066e7dfe33881bb8062 pid=158699
+мая 18 03:02:43 eduard-HKD-WXX docker.dockerd[2481]: time="2022-05-18T03:02:43.797766821+07:00" level=info msg="starting signal loop" namespace=moby path=/run/snap.docker/containerd/daemon/io.containerd.runtime.v2.task/moby/664530abfe0e63b0d6f765e6ebd1ab931a68257a4d923ae3d0b1e7f3168210e9 pid=158740
+мая 18 03:02:44 eduard-HKD-WXX charon[79348]: 11[KNL] interface vethbbedcae deleted
+мая 18 03:02:44 eduard-HKD-WXX gnome-shell[2641]: [0;1;39m[0;1;31m[0;1;39mRemoving a network device that was not added[0m
+мая 18 03:02:44 eduard-HKD-WXX kernel: eth0: renamed from vethbbedcae
+мая 18 03:02:44 eduard-HKD-WXX NetworkManager[897]: <info>  [1652817764.0724] device (veth4f6d04a): carrier: link connected
+мая 18 03:02:44 eduard-HKD-WXX NetworkManager[897]: <info>  [1652817764.0726] device (br-13a30f52d39d): carrier: link connected
+мая 18 03:02:44 eduard-HKD-WXX kernel: IPv6: ADDRCONF(NETDEV_CHANGE): veth4f6d04a: link becomes ready
+мая 18 03:02:44 eduard-HKD-WXX charon[79348]: 08[KNL] interface veth6806f14 deleted
+мая 18 03:02:44 eduard-HKD-WXX kernel: eth0: renamed from veth6806f14
+мая 18 03:02:44 eduard-HKD-WXX NetworkManager[897]: <info>  [1652817764.1404] device (veth40485a2): carrier: link connected
+мая 18 03:02:44 eduard-HKD-WXX gnome-shell[2641]: [0;1;39m[0;1;31m[0;1;39mRemoving a network device that was not added[0m
+мая 18 03:02:44 eduard-HKD-WXX kernel: IPv6: ADDRCONF(NETDEV_CHANGE): veth40485a2: link becomes ready
+мая 18 03:02:44 eduard-HKD-WXX kernel: br-13a30f52d39d: port 3(veth40485a2) entered blocking state
+мая 18 03:02:44 eduard-HKD-WXX kernel: br-13a30f52d39d: port 3(veth40485a2) entered forwarding state
+мая 18 03:02:44 eduard-HKD-WXX kernel: br-13a30f52d39d: port 4(veth4f6d04a) entered disabled state
+мая 18 03:02:44 eduard-HKD-WXX kernel: vethbbedcae: renamed from eth0
+мая 18 03:02:44 eduard-HKD-WXX charon[79348]: 08[KNL] interface veth4f6d04a deactivated
+мая 18 03:02:44 eduard-HKD-WXX charon[79348]: 10[KNL] interface vethbbedcae deleted
+мая 18 03:02:44 eduard-HKD-WXX kernel: br-13a30f52d39d: port 4(veth4f6d04a) entered disabled state
+мая 18 03:02:44 eduard-HKD-WXX kernel: device veth4f6d04a left promiscuous mode
+мая 18 03:02:44 eduard-HKD-WXX kernel: br-13a30f52d39d: port 4(veth4f6d04a) entered disabled state
+мая 18 03:02:44 eduard-HKD-WXX charon[79348]: 16[KNL] interface veth4f6d04a deleted
+мая 18 03:02:44 eduard-HKD-WXX NetworkManager[897]: <info>  [1652817764.5237] device (vethbbedcae): driver '(null)' does not support carrier detection.
+мая 18 03:02:44 eduard-HKD-WXX systemd-udevd[158599]: [0;1;31m[0;1;39m[0;1;31mvethbbedcae: Failed to get link config: No such device[0m
+мая 18 03:02:44 eduard-HKD-WXX NetworkManager[897]: <info>  [1652817764.5238] device (vethbbedcae): driver 'veth' does not support carrier detection.
+мая 18 03:02:44 eduard-HKD-WXX NetworkManager[897]: <info>  [1652817764.5241] manager: (vethbbedcae): new Veth device (/org/freedesktop/NetworkManager/Devices/2020)
+мая 18 03:02:44 eduard-HKD-WXX NetworkManager[897]: <info>  [1652817764.5263] device (veth4f6d04a): released from master device br-13a30f52d39d
+мая 18 03:02:44 eduard-HKD-WXX gnome-shell[2641]: [0;1;39m[0;1;31m[0;1;39mRemoving a network device that was not added[0m
+мая 18 03:02:44 eduard-HKD-WXX gnome-shell[2641]: [0;1;39m[0;1;31m[0;1;39mRemoving a network device that was not added[0m
+мая 18 03:02:44 eduard-HKD-WXX systemd-udevd[158599]: [0;1;31m[0;1;39m[0;1;31mvethbbedcae: Failed to get link config: No such device[0m
+мая 18 03:02:44 eduard-HKD-WXX charon[79348]: 08[KNL] fe80::42:15ff:feb2:7689 appeared on br-13a30f52d39d
+мая 18 03:02:44 eduard-HKD-WXX avahi-daemon[888]: Joining mDNS multicast group on interface br-13a30f52d39d.IPv6 with address fe80::42:15ff:feb2:7689.
+мая 18 03:02:44 eduard-HKD-WXX avahi-daemon[888]: New relevant interface br-13a30f52d39d.IPv6 for mDNS.
+мая 18 03:02:44 eduard-HKD-WXX avahi-daemon[888]: Registering new address record for fe80::42:15ff:feb2:7689 on br-13a30f52d39d.*.
+мая 18 03:02:45 eduard-HKD-WXX charon[79348]: 10[KNL] interface vethfec0297 deleted
+мая 18 03:02:45 eduard-HKD-WXX kernel: eth0: renamed from vethfec0297
+мая 18 03:02:45 eduard-HKD-WXX NetworkManager[897]: <info>  [1652817765.1087] device (vethd9c8759): carrier: link connected
+мая 18 03:02:45 eduard-HKD-WXX gnome-shell[2641]: [0;1;39m[0;1;31m[0;1;39mRemoving a network device that was not added[0m
+мая 18 03:02:45 eduard-HKD-WXX kernel: IPv6: ADDRCONF(NETDEV_CHANGE): vethd9c8759: link becomes ready
+мая 18 03:02:45 eduard-HKD-WXX kernel: br-13a30f52d39d: port 2(vethd9c8759) entered blocking state
+мая 18 03:02:45 eduard-HKD-WXX kernel: br-13a30f52d39d: port 2(vethd9c8759) entered forwarding state
+мая 18 03:02:45 eduard-HKD-WXX charon[79348]: 07[KNL] interface veth4f31b0b deleted
+мая 18 03:02:45 eduard-HKD-WXX kernel: eth0: renamed from veth4f31b0b
+мая 18 03:02:45 eduard-HKD-WXX NetworkManager[897]: <info>  [1652817765.1685] device (vethf6d0587): carrier: link connected
+мая 18 03:02:45 eduard-HKD-WXX gnome-shell[2641]: [0;1;39m[0;1;31m[0;1;39mRemoving a network device that was not added[0m
+мая 18 03:02:45 eduard-HKD-WXX kernel: IPv6: ADDRCONF(NETDEV_CHANGE): vethf6d0587: link becomes ready
+мая 18 03:02:45 eduard-HKD-WXX kernel: br-13a30f52d39d: port 1(vethf6d0587) entered blocking state
+мая 18 03:02:45 eduard-HKD-WXX kernel: br-13a30f52d39d: port 1(vethf6d0587) entered forwarding state
+мая 18 03:02:45 eduard-HKD-WXX charon[79348]: 16[KNL] fe80::78aa:52ff:fe29:f344 appeared on veth40485a2
+мая 18 03:02:45 eduard-HKD-WXX avahi-daemon[888]: Joining mDNS multicast group on interface veth40485a2.IPv6 with address fe80::78aa:52ff:fe29:f344.
+мая 18 03:02:45 eduard-HKD-WXX avahi-daemon[888]: New relevant interface veth40485a2.IPv6 for mDNS.
+мая 18 03:02:45 eduard-HKD-WXX avahi-daemon[888]: Registering new address record for fe80::78aa:52ff:fe29:f344 on veth40485a2.*.
+мая 18 03:02:46 eduard-HKD-WXX charon[79348]: 08[KNL] fe80::ced:caff:fe32:83bf appeared on vethf6d0587
+мая 18 03:02:46 eduard-HKD-WXX avahi-daemon[888]: Joining mDNS multicast group on interface vethf6d0587.IPv6 with address fe80::ced:caff:fe32:83bf.
+мая 18 03:02:46 eduard-HKD-WXX avahi-daemon[888]: New relevant interface vethf6d0587.IPv6 for mDNS.
+мая 18 03:02:46 eduard-HKD-WXX avahi-daemon[888]: Registering new address record for fe80::ced:caff:fe32:83bf on vethf6d0587.*.
+мая 18 03:02:47 eduard-HKD-WXX charon[79348]: 11[KNL] fe80::b4d3:ecff:fe93:8dca appeared on vethd9c8759
+мая 18 03:02:47 eduard-HKD-WXX avahi-daemon[888]: Joining mDNS multicast group on interface vethd9c8759.IPv6 with address fe80::b4d3:ecff:fe93:8dca.
+мая 18 03:02:47 eduard-HKD-WXX avahi-daemon[888]: New relevant interface vethd9c8759.IPv6 for mDNS.
+мая 18 03:02:47 eduard-HKD-WXX avahi-daemon[888]: Registering new address record for fe80::b4d3:ecff:fe93:8dca on vethd9c8759.*.
+мая 18 03:03:03 eduard-HKD-WXX audit[159233]: [0;34m[0;34mSECCOMP auid=1000 uid=1000 gid=1000 ses=3 subj=snap.chromium.chromium pid=159233 comm="chrome" exe="/snap/chromium/1993/usr/lib/chromium-browser/chrome" sig=0 arch=c000003e syscall=330 compat=0 ip=0x7fa0fa16103b code=0x50000[0m
+мая 18 03:03:03 eduard-HKD-WXX kernel: [0;1;39m[0;1;31m[0;1;39maudit: type=1326 audit(1652817783.515:1588): auid=1000 uid=1000 gid=1000 ses=3 subj=snap.chromium.chromium pid=159233 comm="chrome" exe="/snap/chromium/1993/usr/lib/chromium-browser/chrome" sig=0 arch=c000003e syscall=330 compat=0 ip=0x7fa0fa16103b code=0x50000[0m
+мая 18 03:03:03 eduard-HKD-WXX audit[159253]: [0;34m[0;34mSECCOMP auid=1000 uid=1000 gid=1000 ses=3 subj=snap.chromium.chromium pid=159253 comm="chrome" exe="/snap/chromium/1993/usr/lib/chromium-browser/chrome" sig=0 arch=c000003e syscall=330 compat=0 ip=0x7fa0fa16103b code=0x50000[0m
+мая 18 03:03:03 eduard-HKD-WXX kernel: [0;1;39m[0;1;31m[0;1;39maudit: type=1326 audit(1652817783.595:1589): auid=1000 uid=1000 gid=1000 ses=3 subj=snap.chromium.chromium pid=159253 comm="chrome" exe="/snap/chromium/1993/usr/lib/chromium-browser/chrome" sig=0 arch=c000003e syscall=330 compat=0 ip=0x7fa0fa16103b code=0x50000[0m
+мая 18 03:03:07 eduard-HKD-WXX charon[79348]: 06[KNL] interface veth2a31b66 activated
+мая 18 03:03:07 eduard-HKD-WXX kernel: br-5b085080a970: port 2(veth2a31b66) entered blocking state
+мая 18 03:03:07 eduard-HKD-WXX kernel: br-5b085080a970: port 2(veth2a31b66) entered disabled state
+мая 18 03:03:07 eduard-HKD-WXX kernel: device veth2a31b66 entered promiscuous mode
+мая 18 03:03:07 eduard-HKD-WXX NetworkManager[897]: <info>  [1652817787.7461] manager: (veth097f567): new Veth device (/org/freedesktop/NetworkManager/Devices/2021)
+мая 18 03:03:07 eduard-HKD-WXX systemd-udevd[159287]: ethtool: autonegotiation is unset or enabled, the speed and duplex are not writable.
+мая 18 03:03:07 eduard-HKD-WXX systemd-udevd[159286]: ethtool: autonegotiation is unset or enabled, the speed and duplex are not writable.
+мая 18 03:03:07 eduard-HKD-WXX NetworkManager[897]: <info>  [1652817787.7477] manager: (veth2a31b66): new Veth device (/org/freedesktop/NetworkManager/Devices/2022)
+мая 18 03:03:07 eduard-HKD-WXX systemd-udevd[159287]: Using default interface naming scheme 'v245'.
+мая 18 03:03:07 eduard-HKD-WXX systemd-udevd[159287]: [0;1;38;5;185m[0;1;39m[0;1;38;5;185mveth2a31b66: Could not generate persistent MAC: No data available[0m
+мая 18 03:03:07 eduard-HKD-WXX systemd-udevd[159286]: Using default interface naming scheme 'v245'.
+мая 18 03:03:07 eduard-HKD-WXX systemd-udevd[159286]: [0;1;38;5;185m[0;1;39m[0;1;38;5;185mveth097f567: Could not generate persistent MAC: No data available[0m
+мая 18 03:03:08 eduard-HKD-WXX docker.dockerd[2481]: time="2022-05-18T03:03:08.255867359+07:00" level=info msg="starting signal loop" namespace=moby path=/run/snap.docker/containerd/daemon/io.containerd.runtime.v2.task/moby/eeb5b75607f7fafcff8cf8fbdbd2b7014983ab6eba91cfa53e6b0361859e731b pid=159321
+мая 18 03:03:08 eduard-HKD-WXX audit[159345]: [0;34m[0;34mSECCOMP auid=1000 uid=1000 gid=1000 ses=3 subj=snap.chromium.chromium pid=159345 comm="chrome" exe="/snap/chromium/1993/usr/lib/chromium-browser/chrome" sig=0 arch=c000003e syscall=330 compat=0 ip=0x7fa0fa16103b code=0x50000[0m
+мая 18 03:03:08 eduard-HKD-WXX kernel: [0;1;39m[0;1;31m[0;1;39maudit: type=1326 audit(1652817788.515:1590): auid=1000 uid=1000 gid=1000 ses=3 subj=snap.chromium.chromium pid=159345 comm="chrome" exe="/snap/chromium/1993/usr/lib/chromium-browser/chrome" sig=0 arch=c000003e syscall=330 compat=0 ip=0x7fa0fa16103b code=0x50000[0m
+мая 18 03:03:09 eduard-HKD-WXX charon[79348]: 12[KNL] interface veth097f567 deleted
+мая 18 03:03:09 eduard-HKD-WXX gnome-shell[2641]: [0;1;39m[0;1;31m[0;1;39mRemoving a network device that was not added[0m
+мая 18 03:03:09 eduard-HKD-WXX kernel: eth0: renamed from veth097f567
+мая 18 03:03:09 eduard-HKD-WXX NetworkManager[897]: <info>  [1652817789.8147] device (veth2a31b66): carrier: link connected
+мая 18 03:03:09 eduard-HKD-WXX kernel: IPv6: ADDRCONF(NETDEV_CHANGE): veth2a31b66: link becomes ready
+мая 18 03:03:09 eduard-HKD-WXX kernel: br-5b085080a970: port 2(veth2a31b66) entered blocking state
+мая 18 03:03:09 eduard-HKD-WXX kernel: br-5b085080a970: port 2(veth2a31b66) entered forwarding state
+мая 18 03:03:10 eduard-HKD-WXX kernel: br-5b085080a970: port 2(veth2a31b66) entered disabled state
+мая 18 03:03:10 eduard-HKD-WXX kernel: veth097f567: renamed from eth0
+мая 18 03:03:10 eduard-HKD-WXX NetworkManager[897]: <info>  [1652817790.3361] manager: (veth097f567): new Veth device (/org/freedesktop/NetworkManager/Devices/2023)
+мая 18 03:03:10 eduard-HKD-WXX systemd-udevd[159287]: ethtool: autonegotiation is unset or enabled, the speed and duplex are not writable.
+мая 18 03:03:10 eduard-HKD-WXX charon[79348]: 08[KNL] interface veth2a31b66 deactivated
+мая 18 03:03:10 eduard-HKD-WXX kernel: br-5b085080a970: port 2(veth2a31b66) entered disabled state
+мая 18 03:03:10 eduard-HKD-WXX charon[79348]: 10[KNL] interface veth097f567 deleted
+мая 18 03:03:10 eduard-HKD-WXX kernel: device veth2a31b66 left promiscuous mode
+мая 18 03:03:10 eduard-HKD-WXX kernel: br-5b085080a970: port 2(veth2a31b66) entered disabled state
+мая 18 03:03:10 eduard-HKD-WXX charon[79348]: 06[KNL] interface veth2a31b66 deleted
+мая 18 03:03:10 eduard-HKD-WXX systemd-udevd[159287]: [0;1;31m[0;1;39m[0;1;31mveth097f567: Failed to get link config: No such device[0m
+мая 18 03:03:10 eduard-HKD-WXX NetworkManager[897]: <info>  [1652817790.3690] device (veth2a31b66): released from master device br-5b085080a970
+мая 18 03:03:10 eduard-HKD-WXX gnome-shell[2641]: [0;1;39m[0;1;31m[0;1;39mRemoving a network device that was not added[0m
+мая 18 03:03:10 eduard-HKD-WXX gnome-shell[2641]: [0;1;39m[0;1;31m[0;1;39mRemoving a network device that was not added[0m
+мая 18 03:03:24 eduard-HKD-WXX chromium_chromium.desktop[6758]: [6758:6762:0518/030324.356878:ERROR:ssl_client_socket_impl.cc(999)] handshake failed; returned -1, SSL error code 1, net_error -201
+мая 18 03:03:26 eduard-HKD-WXX audit[159496]: [0;34m[0;34mAVC apparmor="DENIED" operation="signal" profile="docker-default" pid=159496 comm="runc" requested_mask="receive" denied_mask="receive" signal=int peer="snap.docker.dockerd"[0m
+мая 18 03:03:26 eduard-HKD-WXX kernel: [0;1;39m[0;1;31m[0;1;39maudit: type=1400 audit(1652817806.747:1592): apparmor="DENIED" operation="signal" profile="docker-default" pid=159496 comm="runc" requested_mask="receive" denied_mask="receive" signal=int peer="snap.docker.dockerd"[0m
+мая 18 03:03:26 eduard-HKD-WXX kernel: [0;1;39m[0;1;31m[0;1;39maudit: type=1400 audit(1652817806.747:1591): apparmor="DENIED" operation="signal" profile="docker-default" pid=159495 comm="runc" requested_mask="receive" denied_mask="receive" signal=term peer="snap.docker.dockerd"[0m
+мая 18 03:03:26 eduard-HKD-WXX audit[159495]: [0;34m[0;34mAVC apparmor="DENIED" operation="signal" profile="docker-default" pid=159495 comm="runc" requested_mask="receive" denied_mask="receive" signal=term peer="snap.docker.dockerd"[0m
+мая 18 03:03:26 eduard-HKD-WXX audit[159494]: [0;34m[0;34mAVC apparmor="DENIED" operation="signal" profile="docker-default" pid=159494 comm="runc" requested_mask="receive" denied_mask="receive" signal=winch peer="snap.docker.dockerd"[0m
+мая 18 03:03:26 eduard-HKD-WXX kernel: [0;1;39m[0;1;31m[0;1;39maudit: type=1400 audit(1652817806.763:1593): apparmor="DENIED" operation="signal" profile="docker-default" pid=159494 comm="runc" requested_mask="receive" denied_mask="receive" signal=winch peer="snap.docker.dockerd"[0m
+мая 18 03:03:28 eduard-HKD-WXX docker.dockerd[1015]: time="2022-05-18T03:03:28.799773823+07:00" level=error msg="Error sending stop (signal 15) to container" container=bdab414263170537f0bc066ad377fb9e4acb5ddafc6b5d99af2e642609dd08f5 error="Cannot kill container bdab414263170537f0bc066ad377fb9e4acb5ddafc6b5d99af2e642609dd08f5: unknown error after kill: runc did not terminate successfully: exit status 1: container_linux.go:419: signaling init process caused: permission denied\n: unknown"
+мая 18 03:03:28 eduard-HKD-WXX docker.dockerd[1015]: time="2022-05-18T03:03:28.799853244+07:00" level=error msg="Error sending stop (signal 2) to container" container=85de22ab281721eb693897c3bf3489a65596ddce2048ac33f22cec88afed4f32 error="Cannot kill container 85de22ab281721eb693897c3bf3489a65596ddce2048ac33f22cec88afed4f32: unknown error after kill: runc did not terminate successfully: exit status 1: container_linux.go:419: signaling init process caused: permission denied\n: unknown"
+мая 18 03:03:28 eduard-HKD-WXX docker.dockerd[1015]: time="2022-05-18T03:03:28.800982880+07:00" level=error msg="Error sending stop (signal 28) to container" container=664530abfe0e63b0d6f765e6ebd1ab931a68257a4d923ae3d0b1e7f3168210e9 error="Cannot kill container 664530abfe0e63b0d6f765e6ebd1ab931a68257a4d923ae3d0b1e7f3168210e9: unknown error after kill: runc did not terminate successfully: exit status 1: container_linux.go:419: signaling init process caused: permission denied\n: unknown"
+мая 18 03:03:28 eduard-HKD-WXX audit[159514]: [0;34m[0;34mAVC apparmor="DENIED" operation="signal" profile="docker-default" pid=159514 comm="runc" requested_mask="receive" denied_mask="receive" signal=kill peer="snap.docker.dockerd"[0m
+мая 18 03:03:28 eduard-HKD-WXX kernel: [0;1;39m[0;1;31m[0;1;39maudit: type=1400 audit(1652817808.915:1594): apparmor="DENIED" operation="signal" profile="docker-default" pid=159514 comm="runc" requested_mask="receive" denied_mask="receive" signal=kill peer="snap.docker.dockerd"[0m
+мая 18 03:03:28 eduard-HKD-WXX audit[159520]: [0;34m[0;34mAVC apparmor="DENIED" operation="signal" profile="docker-default" pid=159520 comm="runc" requested_mask="receive" denied_mask="receive" signal=kill peer="snap.docker.dockerd"[0m
+мая 18 03:03:28 eduard-HKD-WXX kernel: [0;1;39m[0;1;31m[0;1;39maudit: type=1400 audit(1652817808.919:1595): apparmor="DENIED" operation="signal" profile="docker-default" pid=159520 comm="runc" requested_mask="receive" denied_mask="receive" signal=kill peer="snap.docker.dockerd"[0m
+мая 18 03:03:28 eduard-HKD-WXX audit[159521]: [0;34m[0;34mAVC apparmor="DENIED" operation="signal" profile="docker-default" pid=159521 comm="runc" requested_mask="receive" denied_mask="receive" signal=kill peer="snap.docker.dockerd"[0m
+мая 18 03:03:28 eduard-HKD-WXX kernel: [0;1;39m[0;1;31m[0;1;39maudit: type=1400 audit(1652817808.923:1596): apparmor="DENIED" operation="signal" profile="docker-default" pid=159521 comm="runc" requested_mask="receive" denied_mask="receive" signal=kill peer="snap.docker.dockerd"[0m
+мая 18 03:03:38 eduard-HKD-WXX docker.dockerd[1015]: time="2022-05-18T03:03:38.919688082+07:00" level=error msg="Container failed to exit within 10 seconds of kill - trying direct SIGKILL" container=bdab414263170537f0bc066ad377fb9e4acb5ddafc6b5d99af2e642609dd08f5 error="context deadline exceeded"
+мая 18 03:03:38 eduard-HKD-WXX docker.dockerd[1015]: time="2022-05-18T03:03:38.922781427+07:00" level=error msg="Container failed to exit within 10 seconds of kill - trying direct SIGKILL" container=85de22ab281721eb693897c3bf3489a65596ddce2048ac33f22cec88afed4f32 error="context deadline exceeded"
+мая 18 03:03:38 eduard-HKD-WXX audit[1015]: [0;34m[0;34mAVC apparmor="DENIED" operation="signal" profile="docker-default" pid=1015 comm="dockerd" requested_mask="receive" denied_mask="receive" signal=kill peer="snap.docker.dockerd"[0m
+мая 18 03:03:38 eduard-HKD-WXX audit[1015]: [0;34m[0;34mAVC apparmor="DENIED" operation="signal" profile="docker-default" pid=1015 comm="dockerd" requested_mask="receive" denied_mask="receive" signal=kill peer="snap.docker.dockerd"[0m
+мая 18 03:03:38 eduard-HKD-WXX kernel: [0;1;39m[0;1;31m[0;1;39maudit: type=1400 audit(1652817818.919:1597): apparmor="DENIED" operation="signal" profile="docker-default" pid=1015 comm="dockerd" requested_mask="receive" denied_mask="receive" signal=kill peer="snap.docker.dockerd"[0m
+мая 18 03:03:38 eduard-HKD-WXX kernel: [0;1;39m[0;1;31m[0;1;39maudit: type=1400 audit(1652817818.919:1598): apparmor="DENIED" operation="signal" profile="docker-default" pid=1015 comm="dockerd" requested_mask="receive" denied_mask="receive" signal=kill peer="snap.docker.dockerd"[0m
+мая 18 03:03:38 eduard-HKD-WXX docker.dockerd[1015]: time="2022-05-18T03:03:38.926903170+07:00" level=error msg="Container failed to exit within 10 seconds of kill - trying direct SIGKILL" container=664530abfe0e63b0d6f765e6ebd1ab931a68257a4d923ae3d0b1e7f3168210e9 error="context deadline exceeded"
+мая 18 03:03:38 eduard-HKD-WXX audit[1015]: [0;34m[0;34mAVC apparmor="DENIED" operation="signal" profile="docker-default" pid=1015 comm="dockerd" requested_mask="receive" denied_mask="receive" signal=kill peer="snap.docker.dockerd"[0m
+мая 18 03:03:38 eduard-HKD-WXX kernel: [0;1;39m[0;1;31m[0;1;39maudit: type=1400 audit(1652817818.923:1599): apparmor="DENIED" operation="signal" profile="docker-default" pid=1015 comm="dockerd" requested_mask="receive" denied_mask="receive" signal=kill peer="snap.docker.dockerd"[0m
+мая 18 03:03:40 eduard-HKD-WXX docker.dockerd[1015]: time="2022-05-18T03:03:40.923979330+07:00" level=error msg="Error killing the container" container=bdab414263170537f0bc066ad377fb9e4acb5ddafc6b5d99af2e642609dd08f5 error="permission denied"
+мая 18 03:03:40 eduard-HKD-WXX docker.dockerd[1015]: time="2022-05-18T03:03:40.924076654+07:00" level=error msg="Handler for POST /v1.25/containers/bdab414263170537f0bc066ad377fb9e4acb5ddafc6b5d99af2e642609dd08f5/stop returned error: cannot stop container: bdab414263170537f0bc066ad377fb9e4acb5ddafc6b5d99af2e642609dd08f5: permission denied"
+мая 18 03:03:40 eduard-HKD-WXX docker.dockerd[1015]: time="2022-05-18T03:03:40.923979332+07:00" level=error msg="Error killing the container" container=85de22ab281721eb693897c3bf3489a65596ddce2048ac33f22cec88afed4f32 error="permission denied"
+мая 18 03:03:40 eduard-HKD-WXX docker.dockerd[1015]: time="2022-05-18T03:03:40.924122786+07:00" level=error msg="Handler for POST /v1.25/containers/85de22ab281721eb693897c3bf3489a65596ddce2048ac33f22cec88afed4f32/stop returned error: cannot stop container: 85de22ab281721eb693897c3bf3489a65596ddce2048ac33f22cec88afed4f32: permission denied"
+мая 18 03:03:40 eduard-HKD-WXX docker.dockerd[1015]: time="2022-05-18T03:03:40.927006360+07:00" level=error msg="Error killing the container" container=664530abfe0e63b0d6f765e6ebd1ab931a68257a4d923ae3d0b1e7f3168210e9 error="permission denied"
+мая 18 03:03:40 eduard-HKD-WXX docker.dockerd[1015]: time="2022-05-18T03:03:40.927033146+07:00" level=error msg="Handler for POST /v1.25/containers/664530abfe0e63b0d6f765e6ebd1ab931a68257a4d923ae3d0b1e7f3168210e9/stop returned error: cannot stop container: 664530abfe0e63b0d6f765e6ebd1ab931a68257a4d923ae3d0b1e7f3168210e9: permission denied"
+мая 18 03:03:44 eduard-HKD-WXX charon[79348]: 12[IKE] sending keep alive to 98.103.101.206[4500]
+мая 18 03:03:57 eduard-HKD-WXX NetworkManager[897]: <info>  [1652817837.9233] dhcp6 (wlp0s20f3): option dhcp6_domain_search  => 'Dlink'
+мая 18 03:03:57 eduard-HKD-WXX NetworkManager[897]: <info>  [1652817837.9233] dhcp6 (wlp0s20f3): option dhcp6_name_servers   => 'fe80::2ad:24ff:fee6:4f40'
+мая 18 03:03:57 eduard-HKD-WXX NetworkManager[897]: <info>  [1652817837.9233] dhcp6 (wlp0s20f3): option ip6_address          => 'fd01::4023:e039:1dfa:ff2b'
+мая 18 03:03:57 eduard-HKD-WXX NetworkManager[897]: <info>  [1652817837.9233] dhcp6 (wlp0s20f3): state changed bound -> bound
+мая 18 03:03:57 eduard-HKD-WXX dbus-daemon[895]: [system] Activating via systemd: service name='org.freedesktop.nm_dispatcher' unit='dbus-org.freedesktop.nm-dispatcher.service' requested by ':1.13' (uid=0 pid=897 comm="/usr/sbin/NetworkManager --no-daemon " label="unconfined")
+мая 18 03:03:57 eduard-HKD-WXX systemd[1]: Starting Network Manager Script Dispatcher Service...
+-- Subject: Начинается запуск юнита NetworkManager-dispatcher.service
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- Начат процесс запуска юнита NetworkManager-dispatcher.service.
+мая 18 03:03:57 eduard-HKD-WXX dbus-daemon[895]: [system] Successfully activated service 'org.freedesktop.nm_dispatcher'
+мая 18 03:03:57 eduard-HKD-WXX systemd[1]: Started Network Manager Script Dispatcher Service.
+-- Subject: Запуск юнита NetworkManager-dispatcher.service завершен
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- Процесс запуска юнита NetworkManager-dispatcher.service был завершен.
+-- 
+-- Результат: done.
+мая 18 03:04:04 eduard-HKD-WXX charon[79348]: 13[IKE] sending keep alive to 98.103.101.206[4500]
+мая 18 03:04:07 eduard-HKD-WXX dbus-daemon[2489]: [session uid=1000 pid=2489] Activating via systemd: service name='org.freedesktop.Tracker1' unit='tracker-store.service' requested by ':1.2' (uid=1000 pid=2485 comm="/usr/libexec/tracker-miner-fs " label="unconfined")
+мая 18 03:04:07 eduard-HKD-WXX systemd[2476]: Starting Tracker metadata database store and lookup manager...
+-- Subject: Начинается запуск юнита UNIT
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- Начат процесс запуска юнита UNIT.
+мая 18 03:04:07 eduard-HKD-WXX dbus-daemon[2489]: [session uid=1000 pid=2489] Successfully activated service 'org.freedesktop.Tracker1'
+мая 18 03:04:07 eduard-HKD-WXX systemd[2476]: Started Tracker metadata database store and lookup manager.
+-- Subject: Запуск юнита UNIT завершен
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- Процесс запуска юнита UNIT был завершен.
+-- 
+-- Результат: done.
+мая 18 03:04:07 eduard-HKD-WXX systemd[1]: NetworkManager-dispatcher.service: Succeeded.
+-- Subject: Unit succeeded
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- The unit NetworkManager-dispatcher.service has successfully entered the 'dead' state.
+мая 18 03:04:10 eduard-HKD-WXX NetworkManager[897]: <info>  [1652817850.3472] manager: (vethb8facdf): new Veth device (/org/freedesktop/NetworkManager/Devices/2024)
+мая 18 03:04:10 eduard-HKD-WXX NetworkManager[897]: <info>  [1652817850.3482] manager: (veth7b46618): new Veth device (/org/freedesktop/NetworkManager/Devices/2025)
+мая 18 03:04:10 eduard-HKD-WXX systemd-udevd[159585]: ethtool: autonegotiation is unset or enabled, the speed and duplex are not writable.
+мая 18 03:04:10 eduard-HKD-WXX systemd-udevd[159584]: ethtool: autonegotiation is unset or enabled, the speed and duplex are not writable.
+мая 18 03:04:10 eduard-HKD-WXX systemd-udevd[159585]: Using default interface naming scheme 'v245'.
+мая 18 03:04:10 eduard-HKD-WXX systemd-udevd[159585]: [0;1;38;5;185m[0;1;39m[0;1;38;5;185mveth7b46618: Could not generate persistent MAC: No data available[0m
+мая 18 03:04:10 eduard-HKD-WXX systemd-udevd[159584]: Using default interface naming scheme 'v245'.
+мая 18 03:04:10 eduard-HKD-WXX systemd-udevd[159584]: [0;1;38;5;185m[0;1;39m[0;1;38;5;185mvethb8facdf: Could not generate persistent MAC: No data available[0m
+мая 18 03:04:10 eduard-HKD-WXX charon[79348]: 08[KNL] interface veth7b46618 activated
+мая 18 03:04:10 eduard-HKD-WXX kernel: br-5b085080a970: port 2(veth7b46618) entered blocking state
+мая 18 03:04:10 eduard-HKD-WXX kernel: br-5b085080a970: port 2(veth7b46618) entered disabled state
+мая 18 03:04:10 eduard-HKD-WXX kernel: device veth7b46618 entered promiscuous mode
+мая 18 03:04:10 eduard-HKD-WXX docker.dockerd[2481]: time="2022-05-18T03:04:10.797945360+07:00" level=info msg="starting signal loop" namespace=moby path=/run/snap.docker/containerd/daemon/io.containerd.runtime.v2.task/moby/eeb5b75607f7fafcff8cf8fbdbd2b7014983ab6eba91cfa53e6b0361859e731b pid=159620
+мая 18 03:04:11 eduard-HKD-WXX charon[79348]: 10[KNL] interface vethb8facdf deleted
+мая 18 03:04:11 eduard-HKD-WXX kernel: eth0: renamed from vethb8facdf
+мая 18 03:04:11 eduard-HKD-WXX NetworkManager[897]: <info>  [1652817851.6191] device (veth7b46618): carrier: link connected
+мая 18 03:04:11 eduard-HKD-WXX kernel: IPv6: ADDRCONF(NETDEV_CHANGE): veth7b46618: link becomes ready
+мая 18 03:04:11 eduard-HKD-WXX kernel: br-5b085080a970: port 2(veth7b46618) entered blocking state
+мая 18 03:04:11 eduard-HKD-WXX kernel: br-5b085080a970: port 2(veth7b46618) entered forwarding state
+мая 18 03:04:11 eduard-HKD-WXX gnome-shell[2641]: [0;1;39m[0;1;31m[0;1;39mRemoving a network device that was not added[0m
+мая 18 03:04:11 eduard-HKD-WXX kernel: br-5b085080a970: port 2(veth7b46618) entered disabled state
+мая 18 03:04:11 eduard-HKD-WXX kernel: vethb8facdf: renamed from eth0
+мая 18 03:04:11 eduard-HKD-WXX charon[79348]: 11[KNL] interface veth7b46618 deactivated
+мая 18 03:04:11 eduard-HKD-WXX charon[79348]: 14[KNL] interface vethb8facdf deleted
+мая 18 03:04:11 eduard-HKD-WXX kernel: br-5b085080a970: port 2(veth7b46618) entered disabled state
+мая 18 03:04:11 eduard-HKD-WXX kernel: device veth7b46618 left promiscuous mode
+мая 18 03:04:11 eduard-HKD-WXX kernel: br-5b085080a970: port 2(veth7b46618) entered disabled state
+мая 18 03:04:11 eduard-HKD-WXX charon[79348]: 08[KNL] interface veth7b46618 deleted
+мая 18 03:04:11 eduard-HKD-WXX systemd-udevd[159591]: [0;1;31m[0;1;39m[0;1;31mvethb8facdf: Failed to get link config: No such device[0m
+мая 18 03:04:11 eduard-HKD-WXX NetworkManager[897]: <info>  [1652817851.8900] device (vethb8facdf): driver 'veth' does not support carrier detection.
+мая 18 03:04:11 eduard-HKD-WXX NetworkManager[897]: <info>  [1652817851.8903] manager: (vethb8facdf): new Veth device (/org/freedesktop/NetworkManager/Devices/2026)
+мая 18 03:04:11 eduard-HKD-WXX NetworkManager[897]: <info>  [1652817851.8919] device (veth7b46618): released from master device br-5b085080a970
+мая 18 03:04:11 eduard-HKD-WXX gnome-shell[2641]: [0;1;39m[0;1;31m[0;1;39mRemoving a network device that was not added[0m
+мая 18 03:04:11 eduard-HKD-WXX gnome-shell[2641]: [0;1;39m[0;1;31m[0;1;39mRemoving a network device that was not added[0m
+мая 18 03:04:11 eduard-HKD-WXX systemd-udevd[159591]: [0;1;31m[0;1;39m[0;1;31mvethb8facdf: Failed to get link config: No such device[0m
+мая 18 03:04:34 eduard-HKD-WXX systemd[1]: Stopping Docker Application Container Engine...
+-- Subject: Начинается остановка юнита docker.service
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- Начат процесс остановки юнита docker.service.
+мая 18 03:04:34 eduard-HKD-WXX dockerd[1741]: time="2022-05-18T03:04:34.842832731+07:00" level=info msg="Processing signal 'terminated'"
+мая 18 03:04:34 eduard-HKD-WXX dockerd[1741]: time="2022-05-18T03:04:34.867859940+07:00" level=info msg="Daemon shutdown complete"
+мая 18 03:04:34 eduard-HKD-WXX systemd[1]: docker.service: Succeeded.
+-- Subject: Unit succeeded
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- The unit docker.service has successfully entered the 'dead' state.
+мая 18 03:04:34 eduard-HKD-WXX systemd[1]: Stopped Docker Application Container Engine.
+-- Subject: Завершена остановка юнита docker.service.
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- Процесс остановки юнита docker.service был завершен.
+мая 18 03:04:34 eduard-HKD-WXX systemd[1]: docker.socket: Succeeded.
+-- Subject: Unit succeeded
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- The unit docker.socket has successfully entered the 'dead' state.
+мая 18 03:04:34 eduard-HKD-WXX systemd[1]: Closed Docker Socket for the API.
+-- Subject: Завершена остановка юнита docker.socket.
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- Процесс остановки юнита docker.socket был завершен.
+мая 18 03:04:34 eduard-HKD-WXX systemd[1]: Stopping Docker Socket for the API.
+-- Subject: Начинается остановка юнита docker.socket
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- Начат процесс остановки юнита docker.socket.
+мая 18 03:04:34 eduard-HKD-WXX systemd[1]: Starting Docker Socket for the API.
+-- Subject: Начинается запуск юнита docker.socket
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- Начат процесс запуска юнита docker.socket.
+мая 18 03:04:34 eduard-HKD-WXX systemd[1]: Listening on Docker Socket for the API.
+-- Subject: Запуск юнита docker.socket завершен
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- Процесс запуска юнита docker.socket был завершен.
+-- 
+-- Результат: done.
+мая 18 03:04:34 eduard-HKD-WXX systemd[1]: Starting Docker Application Container Engine...
+-- Subject: Начинается запуск юнита docker.service
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- Начат процесс запуска юнита docker.service.
+мая 18 03:04:35 eduard-HKD-WXX dockerd[159760]: time="2022-05-18T03:04:35.068735982+07:00" level=info msg="Starting up"
+мая 18 03:04:35 eduard-HKD-WXX dockerd[159760]: time="2022-05-18T03:04:35.069632298+07:00" level=info msg="detected 127.0.0.53 nameserver, assuming systemd-resolved, so using resolv.conf: /run/systemd/resolve/resolv.conf"
+мая 18 03:04:35 eduard-HKD-WXX dockerd[159760]: time="2022-05-18T03:04:35.071154101+07:00" level=info msg="parsed scheme: \"unix\"" module=grpc
+мая 18 03:04:35 eduard-HKD-WXX dockerd[159760]: time="2022-05-18T03:04:35.071163843+07:00" level=info msg="scheme \"unix\" not registered, fallback to default scheme" module=grpc
+мая 18 03:04:35 eduard-HKD-WXX dockerd[159760]: time="2022-05-18T03:04:35.071179640+07:00" level=info msg="ccResolverWrapper: sending update to cc: {[{unix:///run/containerd/containerd.sock  <nil> 0 <nil>}] <nil> <nil>}" module=grpc
+мая 18 03:04:35 eduard-HKD-WXX dockerd[159760]: time="2022-05-18T03:04:35.071190702+07:00" level=info msg="ClientConn switching balancer to \"pick_first\"" module=grpc
+мая 18 03:04:35 eduard-HKD-WXX dockerd[159760]: time="2022-05-18T03:04:35.080286719+07:00" level=info msg="parsed scheme: \"unix\"" module=grpc
+мая 18 03:04:35 eduard-HKD-WXX dockerd[159760]: time="2022-05-18T03:04:35.080298716+07:00" level=info msg="scheme \"unix\" not registered, fallback to default scheme" module=grpc
+мая 18 03:04:35 eduard-HKD-WXX dockerd[159760]: time="2022-05-18T03:04:35.080311790+07:00" level=info msg="ccResolverWrapper: sending update to cc: {[{unix:///run/containerd/containerd.sock  <nil> 0 <nil>}] <nil> <nil>}" module=grpc
+мая 18 03:04:35 eduard-HKD-WXX dockerd[159760]: time="2022-05-18T03:04:35.080318304+07:00" level=info msg="ClientConn switching balancer to \"pick_first\"" module=grpc
+мая 18 03:04:35 eduard-HKD-WXX dockerd[159760]: time="2022-05-18T03:04:35.086511150+07:00" level=info msg="[graphdriver] using prior storage driver: overlay2"
+мая 18 03:04:35 eduard-HKD-WXX dockerd[159760]: time="2022-05-18T03:04:35.103598439+07:00" level=warning msg="Your kernel does not support CPU realtime scheduler"
+мая 18 03:04:35 eduard-HKD-WXX dockerd[159760]: time="2022-05-18T03:04:35.103616487+07:00" level=warning msg="Your kernel does not support cgroup blkio weight"
+мая 18 03:04:35 eduard-HKD-WXX dockerd[159760]: time="2022-05-18T03:04:35.103622289+07:00" level=warning msg="Your kernel does not support cgroup blkio weight_device"
+мая 18 03:04:35 eduard-HKD-WXX dockerd[159760]: time="2022-05-18T03:04:35.103733740+07:00" level=info msg="Loading containers: start."
+мая 18 03:04:35 eduard-HKD-WXX dockerd[159760]: time="2022-05-18T03:04:35.161312552+07:00" level=info msg="Default bridge (docker0) is assigned with an IP address 172.17.0.0/16. Daemon option --bip can be used to set a preferred IP address"
+мая 18 03:04:35 eduard-HKD-WXX dockerd[159760]: time="2022-05-18T03:04:35.174304871+07:00" level=info msg="Loading containers: done."
+мая 18 03:04:35 eduard-HKD-WXX dockerd[159760]: time="2022-05-18T03:04:35.219898421+07:00" level=info msg="Docker daemon" commit="20.10.7-0ubuntu5~20.04.2" graphdriver(s)=overlay2 version=20.10.7
+мая 18 03:04:35 eduard-HKD-WXX dockerd[159760]: time="2022-05-18T03:04:35.220055915+07:00" level=info msg="Daemon has completed initialization"
+мая 18 03:04:35 eduard-HKD-WXX systemd[1]: Started Docker Application Container Engine.
+-- Subject: Запуск юнита docker.service завершен
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- Процесс запуска юнита docker.service был завершен.
+-- 
+-- Результат: done.
+мая 18 03:04:35 eduard-HKD-WXX dockerd[159760]: time="2022-05-18T03:04:35.233450696+07:00" level=info msg="API listen on /run/docker.sock"
+мая 18 03:04:39 eduard-HKD-WXX systemd[1]: Stopping Docker Application Container Engine...
+-- Subject: Начинается остановка юнита docker.service
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- Начат процесс остановки юнита docker.service.
+мая 18 03:04:39 eduard-HKD-WXX dockerd[159760]: time="2022-05-18T03:04:39.690763088+07:00" level=info msg="Processing signal 'terminated'"
+мая 18 03:04:39 eduard-HKD-WXX dockerd[159760]: time="2022-05-18T03:04:39.692388076+07:00" level=info msg="stopping event stream following graceful shutdown" error="<nil>" module=libcontainerd namespace=moby
+мая 18 03:04:39 eduard-HKD-WXX dockerd[159760]: time="2022-05-18T03:04:39.693263745+07:00" level=info msg="Daemon shutdown complete"
+мая 18 03:04:39 eduard-HKD-WXX systemd[1]: docker.service: Succeeded.
+-- Subject: Unit succeeded
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- The unit docker.service has successfully entered the 'dead' state.
+мая 18 03:04:39 eduard-HKD-WXX systemd[1]: Stopped Docker Application Container Engine.
+-- Subject: Завершена остановка юнита docker.service.
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- Процесс остановки юнита docker.service был завершен.
+мая 18 03:04:39 eduard-HKD-WXX systemd[1]: docker.socket: Succeeded.
+-- Subject: Unit succeeded
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- The unit docker.socket has successfully entered the 'dead' state.
+мая 18 03:04:39 eduard-HKD-WXX systemd[1]: Closed Docker Socket for the API.
+-- Subject: Завершена остановка юнита docker.socket.
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- Процесс остановки юнита docker.socket был завершен.
+мая 18 03:04:39 eduard-HKD-WXX systemd[1]: Stopping Docker Socket for the API.
+-- Subject: Начинается остановка юнита docker.socket
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- Начат процесс остановки юнита docker.socket.
+мая 18 03:04:39 eduard-HKD-WXX systemd[1]: Starting Docker Socket for the API.
+-- Subject: Начинается запуск юнита docker.socket
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- Начат процесс запуска юнита docker.socket.
+мая 18 03:04:39 eduard-HKD-WXX systemd[1]: Listening on Docker Socket for the API.
+-- Subject: Запуск юнита docker.socket завершен
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- Процесс запуска юнита docker.socket был завершен.
+-- 
+-- Результат: done.
+мая 18 03:04:39 eduard-HKD-WXX systemd[1]: Starting Docker Application Container Engine...
+-- Subject: Начинается запуск юнита docker.service
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- Начат процесс запуска юнита docker.service.
+мая 18 03:04:39 eduard-HKD-WXX dockerd[159938]: time="2022-05-18T03:04:39.773688858+07:00" level=info msg="Starting up"
+мая 18 03:04:39 eduard-HKD-WXX dockerd[159938]: time="2022-05-18T03:04:39.774099568+07:00" level=info msg="detected 127.0.0.53 nameserver, assuming systemd-resolved, so using resolv.conf: /run/systemd/resolve/resolv.conf"
+мая 18 03:04:39 eduard-HKD-WXX dockerd[159938]: time="2022-05-18T03:04:39.774690946+07:00" level=info msg="parsed scheme: \"unix\"" module=grpc
+мая 18 03:04:39 eduard-HKD-WXX dockerd[159938]: time="2022-05-18T03:04:39.774708666+07:00" level=info msg="scheme \"unix\" not registered, fallback to default scheme" module=grpc
+мая 18 03:04:39 eduard-HKD-WXX dockerd[159938]: time="2022-05-18T03:04:39.774729986+07:00" level=info msg="ccResolverWrapper: sending update to cc: {[{unix:///run/containerd/containerd.sock  <nil> 0 <nil>}] <nil> <nil>}" module=grpc
+мая 18 03:04:39 eduard-HKD-WXX dockerd[159938]: time="2022-05-18T03:04:39.774744026+07:00" level=info msg="ClientConn switching balancer to \"pick_first\"" module=grpc
+мая 18 03:04:39 eduard-HKD-WXX dockerd[159938]: time="2022-05-18T03:04:39.775454313+07:00" level=info msg="parsed scheme: \"unix\"" module=grpc
+мая 18 03:04:39 eduard-HKD-WXX dockerd[159938]: time="2022-05-18T03:04:39.775473116+07:00" level=info msg="scheme \"unix\" not registered, fallback to default scheme" module=grpc
+мая 18 03:04:39 eduard-HKD-WXX dockerd[159938]: time="2022-05-18T03:04:39.775483088+07:00" level=info msg="ccResolverWrapper: sending update to cc: {[{unix:///run/containerd/containerd.sock  <nil> 0 <nil>}] <nil> <nil>}" module=grpc
+мая 18 03:04:39 eduard-HKD-WXX dockerd[159938]: time="2022-05-18T03:04:39.775489878+07:00" level=info msg="ClientConn switching balancer to \"pick_first\"" module=grpc
+мая 18 03:04:39 eduard-HKD-WXX systemd[2476]: var-lib-docker-overlay2-check\x2doverlayfs\x2dsupport338690630-merged.mount: Succeeded.
+-- Subject: Unit succeeded
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- The unit UNIT has successfully entered the 'dead' state.
+мая 18 03:04:39 eduard-HKD-WXX systemd[1]: var-lib-docker-overlay2-check\x2doverlayfs\x2dsupport338690630-merged.mount: Succeeded.
+-- Subject: Unit succeeded
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- The unit var-lib-docker-overlay2-check\x2doverlayfs\x2dsupport338690630-merged.mount has successfully entered the 'dead' state.
+мая 18 03:04:39 eduard-HKD-WXX dockerd[159938]: time="2022-05-18T03:04:39.786084376+07:00" level=info msg="[graphdriver] using prior storage driver: overlay2"
+мая 18 03:04:39 eduard-HKD-WXX dockerd[159938]: time="2022-05-18T03:04:39.788382154+07:00" level=warning msg="Your kernel does not support CPU realtime scheduler"
+мая 18 03:04:39 eduard-HKD-WXX dockerd[159938]: time="2022-05-18T03:04:39.788393301+07:00" level=warning msg="Your kernel does not support cgroup blkio weight"
+мая 18 03:04:39 eduard-HKD-WXX dockerd[159938]: time="2022-05-18T03:04:39.788399452+07:00" level=warning msg="Your kernel does not support cgroup blkio weight_device"
+мая 18 03:04:39 eduard-HKD-WXX dockerd[159938]: time="2022-05-18T03:04:39.788521609+07:00" level=info msg="Loading containers: start."
+мая 18 03:04:39 eduard-HKD-WXX dockerd[159938]: time="2022-05-18T03:04:39.837799473+07:00" level=info msg="Default bridge (docker0) is assigned with an IP address 172.17.0.0/16. Daemon option --bip can be used to set a preferred IP address"
+мая 18 03:04:39 eduard-HKD-WXX dockerd[159938]: time="2022-05-18T03:04:39.851031235+07:00" level=info msg="Loading containers: done."
+мая 18 03:04:39 eduard-HKD-WXX dockerd[159938]: time="2022-05-18T03:04:39.856521916+07:00" level=info msg="Docker daemon" commit="20.10.7-0ubuntu5~20.04.2" graphdriver(s)=overlay2 version=20.10.7
+мая 18 03:04:39 eduard-HKD-WXX dockerd[159938]: time="2022-05-18T03:04:39.856556680+07:00" level=info msg="Daemon has completed initialization"
+мая 18 03:04:39 eduard-HKD-WXX systemd[1]: Started Docker Application Container Engine.
+-- Subject: Запуск юнита docker.service завершен
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- Процесс запуска юнита docker.service был завершен.
+-- 
+-- Результат: done.
+мая 18 03:04:39 eduard-HKD-WXX dockerd[159938]: time="2022-05-18T03:04:39.864454460+07:00" level=info msg="API listen on /run/docker.sock"
+мая 18 03:04:44 eduard-HKD-WXX charon[79348]: 11[IKE] sending keep alive to 98.103.101.206[4500]
+мая 18 03:04:44 eduard-HKD-WXX systemd[1]: Stopping Docker Application Container Engine...
+-- Subject: Начинается остановка юнита docker.service
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- Начат процесс остановки юнита docker.service.
+мая 18 03:04:44 eduard-HKD-WXX dockerd[159938]: time="2022-05-18T03:04:44.773047859+07:00" level=info msg="Processing signal 'terminated'"
+мая 18 03:04:44 eduard-HKD-WXX dockerd[159938]: time="2022-05-18T03:04:44.774977049+07:00" level=info msg="stopping event stream following graceful shutdown" error="<nil>" module=libcontainerd namespace=moby
+мая 18 03:04:44 eduard-HKD-WXX dockerd[159938]: time="2022-05-18T03:04:44.775736556+07:00" level=info msg="Daemon shutdown complete"
+мая 18 03:04:44 eduard-HKD-WXX systemd[1]: docker.service: Succeeded.
+-- Subject: Unit succeeded
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- The unit docker.service has successfully entered the 'dead' state.
+мая 18 03:04:44 eduard-HKD-WXX systemd[1]: Stopped Docker Application Container Engine.
+-- Subject: Завершена остановка юнита docker.service.
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- Процесс остановки юнита docker.service был завершен.
+мая 18 03:04:44 eduard-HKD-WXX systemd[1]: docker.socket: Succeeded.
+-- Subject: Unit succeeded
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- The unit docker.socket has successfully entered the 'dead' state.
+мая 18 03:04:44 eduard-HKD-WXX systemd[1]: Closed Docker Socket for the API.
+-- Subject: Завершена остановка юнита docker.socket.
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- Процесс остановки юнита docker.socket был завершен.
+мая 18 03:04:44 eduard-HKD-WXX systemd[1]: Stopping Docker Socket for the API.
+-- Subject: Начинается остановка юнита docker.socket
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- Начат процесс остановки юнита docker.socket.
+мая 18 03:04:44 eduard-HKD-WXX systemd[1]: Starting Docker Socket for the API.
+-- Subject: Начинается запуск юнита docker.socket
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- Начат процесс запуска юнита docker.socket.
+мая 18 03:04:44 eduard-HKD-WXX systemd[1]: Listening on Docker Socket for the API.
+-- Subject: Запуск юнита docker.socket завершен
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- Процесс запуска юнита docker.socket был завершен.
+-- 
+-- Результат: done.
+мая 18 03:04:44 eduard-HKD-WXX systemd[1]: Starting Docker Application Container Engine...
+-- Subject: Начинается запуск юнита docker.service
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- Начат процесс запуска юнита docker.service.
+мая 18 03:04:44 eduard-HKD-WXX dockerd[160111]: time="2022-05-18T03:04:44.851198133+07:00" level=info msg="Starting up"
+мая 18 03:04:44 eduard-HKD-WXX dockerd[160111]: time="2022-05-18T03:04:44.851606293+07:00" level=info msg="detected 127.0.0.53 nameserver, assuming systemd-resolved, so using resolv.conf: /run/systemd/resolve/resolv.conf"
+мая 18 03:04:44 eduard-HKD-WXX dockerd[160111]: time="2022-05-18T03:04:44.851939121+07:00" level=info msg="parsed scheme: \"unix\"" module=grpc
+мая 18 03:04:44 eduard-HKD-WXX dockerd[160111]: time="2022-05-18T03:04:44.851950130+07:00" level=info msg="scheme \"unix\" not registered, fallback to default scheme" module=grpc
+мая 18 03:04:44 eduard-HKD-WXX dockerd[160111]: time="2022-05-18T03:04:44.851961620+07:00" level=info msg="ccResolverWrapper: sending update to cc: {[{unix:///run/containerd/containerd.sock  <nil> 0 <nil>}] <nil> <nil>}" module=grpc
+мая 18 03:04:44 eduard-HKD-WXX dockerd[160111]: time="2022-05-18T03:04:44.851985770+07:00" level=info msg="ClientConn switching balancer to \"pick_first\"" module=grpc
+мая 18 03:04:44 eduard-HKD-WXX dockerd[160111]: time="2022-05-18T03:04:44.852603953+07:00" level=info msg="parsed scheme: \"unix\"" module=grpc
+мая 18 03:04:44 eduard-HKD-WXX dockerd[160111]: time="2022-05-18T03:04:44.852626171+07:00" level=info msg="scheme \"unix\" not registered, fallback to default scheme" module=grpc
+мая 18 03:04:44 eduard-HKD-WXX dockerd[160111]: time="2022-05-18T03:04:44.852634103+07:00" level=info msg="ccResolverWrapper: sending update to cc: {[{unix:///run/containerd/containerd.sock  <nil> 0 <nil>}] <nil> <nil>}" module=grpc
+мая 18 03:04:44 eduard-HKD-WXX dockerd[160111]: time="2022-05-18T03:04:44.852638593+07:00" level=info msg="ClientConn switching balancer to \"pick_first\"" module=grpc
+мая 18 03:04:44 eduard-HKD-WXX dockerd[160111]: time="2022-05-18T03:04:44.855628359+07:00" level=info msg="[graphdriver] using prior storage driver: overlay2"
+мая 18 03:04:44 eduard-HKD-WXX dockerd[160111]: time="2022-05-18T03:04:44.859519310+07:00" level=warning msg="Your kernel does not support CPU realtime scheduler"
+мая 18 03:04:44 eduard-HKD-WXX dockerd[160111]: time="2022-05-18T03:04:44.859528646+07:00" level=warning msg="Your kernel does not support cgroup blkio weight"
+мая 18 03:04:44 eduard-HKD-WXX dockerd[160111]: time="2022-05-18T03:04:44.859532041+07:00" level=warning msg="Your kernel does not support cgroup blkio weight_device"
+мая 18 03:04:44 eduard-HKD-WXX dockerd[160111]: time="2022-05-18T03:04:44.859620950+07:00" level=info msg="Loading containers: start."
+мая 18 03:04:44 eduard-HKD-WXX dockerd[160111]: time="2022-05-18T03:04:44.907979253+07:00" level=info msg="Default bridge (docker0) is assigned with an IP address 172.17.0.0/16. Daemon option --bip can be used to set a preferred IP address"
+мая 18 03:04:44 eduard-HKD-WXX dockerd[160111]: time="2022-05-18T03:04:44.921914657+07:00" level=info msg="Loading containers: done."
+мая 18 03:04:44 eduard-HKD-WXX dockerd[160111]: time="2022-05-18T03:04:44.928177330+07:00" level=info msg="Docker daemon" commit="20.10.7-0ubuntu5~20.04.2" graphdriver(s)=overlay2 version=20.10.7
+мая 18 03:04:44 eduard-HKD-WXX dockerd[160111]: time="2022-05-18T03:04:44.928220178+07:00" level=info msg="Daemon has completed initialization"
+мая 18 03:04:44 eduard-HKD-WXX systemd[1]: Started Docker Application Container Engine.
+-- Subject: Запуск юнита docker.service завершен
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- Процесс запуска юнита docker.service был завершен.
+-- 
+-- Результат: done.
+мая 18 03:04:44 eduard-HKD-WXX dockerd[160111]: time="2022-05-18T03:04:44.936297341+07:00" level=info msg="API listen on /run/docker.sock"
+мая 18 03:04:47 eduard-HKD-WXX systemd[1]: Stopping Docker Application Container Engine...
+-- Subject: Начинается остановка юнита docker.service
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- Начат процесс остановки юнита docker.service.
+мая 18 03:04:47 eduard-HKD-WXX dockerd[160111]: time="2022-05-18T03:04:47.480630888+07:00" level=info msg="Processing signal 'terminated'"
+мая 18 03:04:47 eduard-HKD-WXX dockerd[160111]: time="2022-05-18T03:04:47.481992985+07:00" level=info msg="stopping event stream following graceful shutdown" error="<nil>" module=libcontainerd namespace=moby
+мая 18 03:04:47 eduard-HKD-WXX dockerd[160111]: time="2022-05-18T03:04:47.482688739+07:00" level=info msg="Daemon shutdown complete"
+мая 18 03:04:47 eduard-HKD-WXX systemd[1]: docker.service: Succeeded.
+-- Subject: Unit succeeded
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- The unit docker.service has successfully entered the 'dead' state.
+мая 18 03:04:47 eduard-HKD-WXX systemd[1]: Stopped Docker Application Container Engine.
+-- Subject: Завершена остановка юнита docker.service.
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- Процесс остановки юнита docker.service был завершен.
+мая 18 03:04:47 eduard-HKD-WXX systemd[1]: [0;1;38;5;185m[0;1;39m[0;1;38;5;185mdocker.service: Start request repeated too quickly.[0m
+мая 18 03:04:47 eduard-HKD-WXX systemd[1]: [0;1;38;5;185m[0;1;39m[0;1;38;5;185mdocker.service: Failed with result 'start-limit-hit'.[0m
+-- Subject: Unit failed
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- The unit docker.service has entered the 'failed' state with result 'start-limit-hit'.
+мая 18 03:04:47 eduard-HKD-WXX systemd[1]: [0;1;31m[0;1;39m[0;1;31mFailed to start Docker Application Container Engine.[0m
+-- Subject: Ошибка юнита docker.service
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- Произошел сбой юнита docker.service.
+-- 
+-- Результат: failed.
+мая 18 03:04:47 eduard-HKD-WXX systemd[1]: [0;1;38;5;185m[0;1;39m[0;1;38;5;185mdocker.socket: Failed with result 'service-start-limit-hit'.[0m
+-- Subject: Unit failed
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- The unit docker.socket has entered the 'failed' state with result 'service-start-limit-hit'.
+мая 18 03:04:47 eduard-HKD-WXX tracker-store[159567]: OK
+мая 18 03:04:47 eduard-HKD-WXX systemd[2476]: tracker-store.service: Succeeded.
+-- Subject: Unit succeeded
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- The unit UNIT has successfully entered the 'dead' state.
+мая 18 03:04:53 eduard-HKD-WXX systemd[1]: Starting Docker Socket for the API.
+-- Subject: Начинается запуск юнита docker.socket
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- Начат процесс запуска юнита docker.socket.
+мая 18 03:04:53 eduard-HKD-WXX systemd[1]: Listening on Docker Socket for the API.
+-- Subject: Запуск юнита docker.socket завершен
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- Процесс запуска юнита docker.socket был завершен.
+-- 
+-- Результат: done.
+мая 18 03:04:53 eduard-HKD-WXX systemd[1]: [0;1;38;5;185m[0;1;39m[0;1;38;5;185mdocker.service: Start request repeated too quickly.[0m
+мая 18 03:04:53 eduard-HKD-WXX systemd[1]: [0;1;38;5;185m[0;1;39m[0;1;38;5;185mdocker.service: Failed with result 'start-limit-hit'.[0m
+-- Subject: Unit failed
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- The unit docker.service has entered the 'failed' state with result 'start-limit-hit'.
+мая 18 03:04:53 eduard-HKD-WXX systemd[1]: [0;1;31m[0;1;39m[0;1;31mFailed to start Docker Application Container Engine.[0m
+-- Subject: Ошибка юнита docker.service
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- Произошел сбой юнита docker.service.
+-- 
+-- Результат: failed.
+мая 18 03:04:53 eduard-HKD-WXX systemd[1]: [0;1;38;5;185m[0;1;39m[0;1;38;5;185mdocker.socket: Failed with result 'service-start-limit-hit'.[0m
+-- Subject: Unit failed
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- The unit docker.socket has entered the 'failed' state with result 'service-start-limit-hit'.
