@@ -1,0 +1,2 @@
+172.25.0.1 - - [23/May/2022:15:16:37 +0000] "GET /docs HTTP/1.1" 500 996972 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.64 Safari/537.36"
+172.25.0.1 - - [23/May/2022:15:16:37 +0000] "GET /_ignition/health-check HTTP/1.1" 200 40 "http://localhost:83/docs" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.64 Safari/537.36"
