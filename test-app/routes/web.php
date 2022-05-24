@@ -13,6 +13,10 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+Route::get('/', function () {
+    return redirect()->route('docs');
+});
+
 Route::get('/docs', function () {
     return view('docs.index', ['api_token' => \App\Models\User::find(1)->api_token]);
 })->name('docs');
